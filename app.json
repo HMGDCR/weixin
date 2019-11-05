@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/my/index",
+    "pages/logs/logs",
+    "pages/home/homePage/index",
+    "pages/home/detail/detail",
+    "pages/cart/cart",
+    "pages/category/category",
+    "pages/address/add/add",
+    "pages/address/list/list",
+    "pages/order/orderConfirm/index",
+    "pages/order/list/list",
+    "pages/order/detail/detail",
+    "pages/pay/payWay/payWay",
+    "pages/pay/pay/pay",
+    "pages/demo/demo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "selectedColor":"#c03131",
+    "color":"#797d82",
+    "list":[
+      {
+        "iconPath":"./img/home.png",
+        "selectedIconPath": "./img/homing.png",
+        "pagePath": "pages/home/homePage/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "./img/category.png",
+        "selectedIconPath": "./img/categorying.png",
+        "pagePath": "pages/category/category",
+        "text": "类别列表"
+      },
+      {
+        "iconPath": "./img/cart.png",
+        "selectedIconPath": "./img/carting.png",
+        "pagePath": "pages/cart/cart",
+        "text": "购物车"
+      },
+      {
+        "iconPath": "./img/my.png",
+        "selectedIconPath": "./img/mying.png",
+        "pagePath": "pages/my/index",
+        "text": "个人中心"
+      },
+      {
+        "iconPath": "./img/my.png",
+        "selectedIconPath": "./img/mying.png",
+        "pagePath": "pages/demo/demo",
+        "text": "demo"
+      }
+    ]
+  }
+}
