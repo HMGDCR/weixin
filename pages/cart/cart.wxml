@@ -1,2 +1,77 @@
-<!--pages/cart/cart.wxml-->
-<text>pages/cart/cart.wxml</text>
+<!--pages/cart/index.wxml-->
+<view class="cart-befor">
+  <!-- 导航栏 -->
+  <view class="navagator">
+    <van-nav-bar title="购物车" left-text="返回" right-text="编辑" left-arrow bind:click-left="onClickLeft" bind:click-right="onClickRight" />
+  </view>
+  <!-- 商城运费 -->
+  <view class="free-store">
+    <view class="section section_gap">
+      <radio-group class="radio-group" bindchange="radioChange">
+        <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" color="red">
+          <text>{{item.value}}</text>
+        </radio>
+      </radio-group>
+    </view>
+    <text class="free-freight" style="font-size:15px; ">商城承担运费</text>
+    <text class="no-fare">免运费</text>
+  </view>
+  <!-- 购物车列表 -->
+  <view>
+    <view class="flx-cent">
+      <view class="section section_gap">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" color="red">
+            <text>{{item.value}}</text>
+          </radio>
+        </radio-group>
+      </view>
+      <view class="cart-goods">
+        <image src="https://mall.s.maizuo.com/5f727ae93559d9c445e944a58211b538.png"></image>
+      </view>
+      <view class="cart-container flex2 jc-sb">
+        <view class="goods-msg">商品信息多余文字会省略的啊啊啊啊啊啊</view>
+        <view class="goods-price">
+          <text class="price">￥44.9</text>
+          <text class="old-price">￥55.9</text>
+          <text class="count">X 1</text>
+        </view>
+      </view>
+    </view>
+    <view class="flx-cent">
+      <view class="section section_gap">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <radio class="radio" value="{{item.name}}" checked="{{item.checked}}" color="red">
+          </radio>
+        </radio-group>
+      </view>
+      <view class="cart-goods">
+        <image src="https://mall.s.maizuo.com/5f727ae93559d9c445e944a58211b538.png"></image>
+      </view>
+      <view class="cart-container flex2 jc-sb">
+        <view class="goods-msg">商品信息多余文字会省略的啊啊啊啊啊啊</view>
+        <view class="goods-price">
+          <text class="price">￥44.9</text>
+          <text class="old-price">￥55.9</text>
+          <text class="count">X 1</text>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  
+  <!-- 底部结算 -->
+  <van-submit-bar price="{{ 3050 }}" button-text="提交订单" bind:submit="onClickButton" tip="{{ true }}">
+    <van-tag type="primary">
+      <view class="section section_gap">
+        <radio-group class="radio-group" bindchange="radioChange">
+          <radio class="radio" size="10px" value="{{item.name}}" checked="{{item.checked}}" color="red">
+            <text>{{item.value}}</text>
+          </radio>
+        </radio-group>
+      </view>
+    </van-tag>
+    <text>全选</text>
+  </van-submit-bar>
+</view>

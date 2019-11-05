@@ -7,10 +7,10 @@ clearable  是否启用清除控件
 <view>
     <view class="hander">
         <view class="hanone">
-                <van-icon name="arrow-left" />
+            <van-icon name="arrow-left" />
         </view>
         <view>
-               <text>新建地址</text>
+            <text>新建地址</text>
         </view>
     </view>
     <van-cell-group>

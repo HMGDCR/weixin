@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 {
     "files.associations": {
         "*.wxml": "html",
         "*.wxss": "css"
     }
+=======
+{
+    "files.associations": {
+        "*.wxml": "html",
+        "*.wxss": "css"
+    }
+>>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
 }

@@ -13,10 +13,26 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.2",
-	"appid": "wx4e69c623dedf7a3b",
-	"projectname": "sanzu",
-	"debugOptions": {
+	"libVersion": "2.9.1",
+	<<
+	<< << < HEAD <<
+	<< << < HEAD "appid": "wx57ce4777ef580cda",
+	===
+	=== =
+	"appid": "wxd2abc0c0fe268724",
+	"projectname": "miniFresh",
+	>>>
+	>>> > b4a64fca91c4693163d678ee26472930f6aed6a3 ===
+	=== = <<
+	<< << < HEAD "appid": "wx8ac3b054084a8fac",
+	===
+	=== =
+	"appid": "wx713318c47d89e43d",
+	>>>
+	>>> > 312 ba214247c2fe2bcaba3f1de491935cd2bdb32 >>>
+	>>> > 864 d1c8a5d3fd6217b067001721646cd0e292fac "projectname": "miniproject",
+	>>>
+	>>> > 53 dd58129df25641625ae197be8c3a1003b5ef26 "debugOptions": {
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
@@ -45,19 +61,106 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": [
-				{
+			"list": [{
 					"id": -1,
-					"name": "1",
-					"pathName": "pages/category/category",
+					"name": "pages/home/homePage",
+					"pathName": "pages/home/homePage",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "2",
-					"pathName": "pages/order/list/list",
+					"name": "pages/logs/logs",
+					"pathName": "pages/logs/logs",
+					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/index",
+					"pathName": "pages/my/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					<<
+					<< << < HEAD <<
+					<< << < HEAD "name": "pages/category/category",
+					"pathName": "pages/address/list/list",
+					===
+					=== =
+					"name": "pages/cart/cart",
+					"pathName": "pages/cart/cart",
+					>>>
+					>>> > b4a64fca91c4693163d678ee26472930f6aed6a3 ===
+					=== = <<
+					<< << < HEAD <<
+					<< << < HEAD "name": "pages/home/homePage",
+					"pathName": "pages/home/detail/detail",
+					===
+					=== =
+					"name": "pages/home/homePage/index",
+					"pathName": "pages/home/homePage/index",
+					>>>
+					>>> > b14d198fb75f789c9f1a46caa92e2ed5c74cb30f >>>
+					>>> > 864 d1c8a5d3fd6217b067001721646cd0e292fac "query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					<<
+					<< << < HEAD "name": "pages/address/list/list",
+					"pathName": "pages/address/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/detail/detail",
+					"pathName": "pages/order/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/address/list/list",
+					"pathName": "pages/address/list/list",
+					===
+					=== = <<
+					<< << < HEAD "name": "pages/home/detail/detail",
+					"pathName": "pages/home/detail/detail",
+					===
+					=== =
+					"name": "pages/address/add/add",
+					"pathName": "pages/address/add/add",
+					"query": "",
+					>>>
+					>>> > 312 ba214247c2fe2bcaba3f1de491935cd2bdb32 ===
+					=== =
+					"name": "pages/order/orderConfirm/index",
+					"pathName": "pages/order/orderConfirm/index",
+					>>>
+					>>> > b14d198fb75f789c9f1a46caa92e2ed5c74cb30f <<
+					<< << < HEAD >>>
+					>>> > 864 d1c8a5d3fd6217b067001721646cd0e292fac ===
+					=== = >>>
+					>>> > 53 dd58129df25641625ae197be8c3a1003b5ef26 >>>
+					>>> > b4a64fca91c4693163d678ee26472930f6aed6a3 "scene": null
 				}
 			]
 		}
