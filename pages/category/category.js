@@ -1,11 +1,14 @@
-// pages/category/category.js
+// pages/prodouct/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+      value: "",
+      activeKey: 0,
+      activeIndex: 0,
+      items: [{ text: "百果园" }, { text: "时令鲜果" }, { text: "家禽蛋" }]
   },
 
   /**
