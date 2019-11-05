@@ -1,2 +1,35 @@
-<!--pages/address/add/add.wxml-->
-<text>pages/address/add/add.wxml</text>
+<!--pages/address/add/add.wxml
+value 当前的输入的值
+placeholder  占位符
+clearable  是否启用清除控件
+clearable  是否启用清除控件
+-->
+<view>
+    <view class="hander">
+        <view class="hanone">
+                <van-icon name="arrow-left" />
+        </view>
+        <view>
+               <text>新建地址</text>
+        </view>
+    </view>
+    <van-cell-group>
+        <van-field value="{{ username }}" label="姓名" placeholder="请输入用户名" clearable bind:click-icon="onClickIcon" />
+        <van-field value="{{ username }}" label="电话" placeholder="请输入手机号" clearable right-icon-class="custom-icon"
+            bind:click-icon="onClickIcon" />
+        <van-field value="{{ username }}" label="地区" placeholder="省 / 市 / 区" clearable right-icon-class="custom-icon"
+            bind:click-icon="onClickIcon" />
+        <van-field value="{{ username }}" label="详细地址" placeholder="门牌号街道" clearable right-icon-class="custom-icon"
+            bind:click-icon="onClickIcon" />
+        <van-field value="{{ username }}" label="邮编地址" placeholder="邮政编号" clearable right-icon-class="custom-icon"
+            bind:click-icon="onClickIcon" />
+    </van-cell-group>
+    <view class="trueOrfales"> <text>是否设为默认地址</text>
+        <van-switch class="Swith" checked="{{ checked }}" size="20px" />
+    </view>
+    <view class="Preservation">
+        <van-button type="warning" size="large">保存</van-button>
+        <view class="Preservation"></view>
+        <van-button type="default" size="large" custom-style="margin=17px;">删除</van-button>
+    </view >
+</view>
