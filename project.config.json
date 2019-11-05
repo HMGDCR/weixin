@@ -13,6 +13,7 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
+<<<<<<< HEAD
 	"libVersion": "2.9.1",
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -30,6 +31,11 @@
 >>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
 	"projectname": "miniproject",
 >>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
+=======
+	"libVersion": "2.9.2",
+	"appid": "wx4e69c623dedf7a3b",
+	"projectname": "sanzu",
+>>>>>>> 486b91a74385b2eeea94fcb4a2bd7cdbd6a281d8
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -62,13 +68,14 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "pages/home/homePage",
-					"pathName": "pages/home/homePage",
+					"name": "1",
+					"pathName": "pages/category/category",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/logs/logs",
 					"pathName": "pages/logs/logs",
 					"query": "",
@@ -155,6 +162,10 @@
 =======
 >>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
 >>>>>>> b4a64fca91c4693163d678ee26472930f6aed6a3
+=======
+					"name": "2",
+					"pathName": "pages/order/list/list",
+>>>>>>> 486b91a74385b2eeea94fcb4a2bd7cdbd6a281d8
 					"scene": null
 				}
 			]

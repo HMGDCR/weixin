@@ -1,1 +1,111 @@
-/* pages/category/category.wxss */
+.van-grid-item .van-grid-item__content {
+    padding: 5px 5px
+}
+
+.van-search__content--round {
+    width: 640rpx
+}
+
+.van-col {
+    height: 100%;
+    width: 100%
+}
+
+.sort-content {
+    height: 100%
+}
+
+.sort-content .title {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+    background: white;
+    padding: 0 16rpx;
+    box-sizing: border-box;
+    display: flex;
+    align-items: centers
+}
+
+.sort-content .title .van-search {
+    padding: 16rpx 0 16rpx 8rpx;
+
+}
+
+.sort-content .title .van-search .van-cell {
+    padding: 6rpx 10rpx
+}
+
+.sort-content .title .van-col--21 {
+    width: 92.5%
+}
+
+.shop-content {
+    margin-top: 80rpx;
+    margin-bottom: 100rpx;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+.shop-content .shop-select {
+    min-height: 100vh;
+    background: #fafafa;
+    width: 25%;
+    font-size: 28rpx;
+    position: fixed;
+    box-sizing: border-box
+}
+
+.shop-content .shop-select .van-sidebar {
+    width: 100%
+}
+
+.shop-content .shop-select .van-sidebar .van-sidebar-item {
+    padding: 24rpx 24rpx 20rpx 16rpx;
+
+}
+
+.shop-content .shop-main {
+    height: 100%;
+    width: 100%;
+    padding-left: 25%
+}
+
+.shop-content .shop-main .shop-list .shop-items {
+    font-size: 24rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%
+}
+
+.shop-content .shop-main .shop-list .shop-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 10em;
+    padding: 4rpx 0px 4rpx 6rpx;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+
+}
+
+.shop-content .shop-main .shop-list .shop-price {
+    color: #ee0a24;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    padding-left: 12rpx
+}
+
+.shop-content .shop-main .shop-list .a {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
