@@ -14,8 +14,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.1",
-	"appid": "wxb7e7ea2bf6054faa",
-	"projectname": "miniproject",
+	"appid": "wxd2abc0c0fe268724",
+	"projectname": "miniFresh",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -78,6 +78,13 @@
 					"id": -1,
 					"name": "pages/my/index",
 					"pathName": "pages/my/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cart/cart",
+					"pathName": "pages/cart/cart",
 					"scene": null
 				}
 			]
