@@ -14,7 +14,15 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.1",
+<<<<<<< HEAD
 	"appid": "wx57ce4777ef580cda",
+=======
+<<<<<<< HEAD
+	"appid": "wx8ac3b054084a8fac",
+=======
+	"appid": "wx713318c47d89e43d",
+>>>>>>> 312ba214247c2fe2bcaba3f1de491935cd2bdb32
+>>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
 	"projectname": "miniproject",
 	"debugOptions": {
 		"hidedInDevtools": []
@@ -83,13 +91,25 @@
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/category/category",
 					"pathName": "pages/address/list/list",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+					"name": "pages/home/homePage",
+					"pathName": "pages/home/detail/detail",
+=======
+					"name": "pages/home/homePage/index",
+					"pathName": "pages/home/homePage/index",
+>>>>>>> b14d198fb75f789c9f1a46caa92e2ed5c74cb30f
+>>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/address/list/list",
 					"pathName": "pages/address/list/list",
 					"query": "",
@@ -106,6 +126,20 @@
 					"id": -1,
 					"name": "pages/address/list/list",
 					"pathName": "pages/address/list/list",
+=======
+<<<<<<< HEAD
+					"name": "pages/home/detail/detail",
+					"pathName": "pages/home/detail/detail",
+=======
+					"name": "pages/address/add/add",
+					"pathName": "pages/address/add/add",
+					"query": "",
+>>>>>>> 312ba214247c2fe2bcaba3f1de491935cd2bdb32
+=======
+					"name": "pages/order/orderConfirm/index",
+					"pathName": "pages/order/orderConfirm/index",
+>>>>>>> b14d198fb75f789c9f1a46caa92e2ed5c74cb30f
+>>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
 					"scene": null
 				}
 			]
