@@ -2,6 +2,7 @@
 value 当前的输入的值
 placeholder  占位符
 clearable  是否启用清除控件
+clearable  是否启用清除控件
 -->
 <view>
     <view class="hander">
