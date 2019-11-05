@@ -1,2 +1,78 @@
-<!--pages/home/detail/detail.wxml-->
-<text>pages/home/detail/detail.wxml</text>
+
+<view>
+    <view class="big-body">
+        <!-- 轮播图 -->
+        <swiper  class="swipers" indicator-dots="true">
+            <swiper-item>
+                <image src="https://mall.s.maizuo.com/5f727ae93559d9c445e944a58211b538.png?x-oss-process=image/resize,w_563" ></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="https://mall.s.maizuo.com/71e5b918b306be65390ff0c3fb8155f2.jpg?x-oss-process=image/resize,w_563" ></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="https://mall.s.maizuo.com/85692b2f7a7c0ac417a39ec33b4d8895.jpg?x-oss-process=image/resize,w_563" ></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="https://mall.s.maizuo.com/ebbcef931beb1d633533835ef7f51639.jpg?x-oss-process=image/resize,w_563" ></image>
+            </swiper-item>
+        </swiper>
+        <view class="return" bindtap="goBack"><van-icon name="arrow-left" /></view>   
+        <!-- 商品介绍 -->
+        <view class="item-info">
+            <view class="item-info-container">
+                <view class="item-info-master">
+                <text class="label f12" style="background-color: rgb(120, 160, 209);">直降</text>
+                <text class="label f12" style="background-color: rgb(145, 188, 111);">包邮</text>
+                极鲜网 冻巴沙鱼柳 450-500g*2袋 分活动是佛活动啊过分分活动是佛光复读机啊过分活动啊过分分活动啊过分分活动啊过分分活动啊过分分活动啊过分分
+                </view>
+                <view class="item-info-slave color-gray">果园生态种植 皮薄香甜爽口 富含天然维C</view>
+                <view class="item-info-price flex jc-sb ai-fe mt-10">
+                <text>
+                    <text class="price mr-5" style="font-size:15px">￥</text>
+                    <text class="f20 price mr-5">44.9</text>
+                    <text class="f12 old-price mr-5 color-gray" style="text-decoration:line-through;">￥56.9</text>
+                </text>
+                <text class="f12 color-gray">3932人购买</text>
+                </view>
+            </view>
+        </view>
+        <view class="mt-10 f12 fcc color-gray" style="background-color:white;height:46px;">—— 商品详情 ——</view>
+        <view class="bg-fff">
+            <cover-image class="images2" src="https://mall.s.maizuo.com/92d393d03848b8ea112d609e0ae11a00.png"></cover-image>
+            <cover-image class="images2" src="https://mall.s.maizuo.com/30266ad53356660a815d8b799eac35bf.jpg"></cover-image>
+            <cover-image class="images2" src="https://mall.s.maizuo.com/e828214d7b75e7db532bf1cf3cf13f2f.jpg"></cover-image>
+            <cover-image class="images2" src="https://mall.s.maizuo.com/f2919825a151d5631530d47b26fc27cd.jpg"></cover-image>
+            <cover-image class="images2" src="https://mall.s.maizuo.com/c9a60deecd83d63a7ff49512f92ff57f.jpg"></cover-image>
+            <view class="mt-10 f12 fcc color-gray" style="background-color:white;height:46px;">—— 预定流程及须知 ——</view>
+            <cover-image class="images2" src="https://file.sdyxmall.com/h5/v1/public/app/img/group5.b0b24d0.png"></cover-image>
+        </view>
+         <view class="context">
+            <view class="big-item">一、关于发货</view>
+            <view class="small-item">您下单后商品将在购买成功后1-3个工作日内发出（周末、法定节假日需顺延）个工作日内发出（周末、法定节假日需顺延）；</view>
+            <view class="big-item">二、关于发货</view>
+            <view class="small-item">1、生鲜类商品，不支持无理由的退货以及拒收，请您下单前认真考虑，介意请谨拍；</view>
+            <view class="small-item">2、商品质量问题请在签收商品24小时内联系客服并提交问题商品、包装等完整照片及相关证明（订单号、清晰的快递面单图片及商品问题图片</view>
+            <view class="small-item">3、确定收货后，因个人原因储存不当造成的商品变质，不在售后范围内；所以也请客户收货时开箱检查，有任何问题第一时间联系客服处理。</view>
+            <view class="big-item">【售后流程】：</view>
+            <view class="small-item">1、点击“我的”“我的订单”进入订单列表页；</view>
+            <view class="small-item">2、进入订单详情页，点击仅退款（发货后），填写退款原因，上传商品图片；</view>
+            <view class="small-item">3、客服审核通过；</view>
+            <view class="small-item">4、完成退款</view>
+            <view class="big-item">三、配送与签收</view>
+            <view class="small-item">1、购买产品后，请客户保持手机畅通，由于客户手机关机或没有接通，地址错误或联系方式错误导致快递员派送不成功等客户因素，不在售后范围内。</view>
+            <view class="small-item">2、为保障您的权益，请您签收时务必当面拆箱验货，确认无误后再进行签收，如商品配送有误、包装破损、商品腐烂、重量数量不对等问题，请当场向配送人员提出，并及时联系平台客服尽快为您处理。</view>
+            <view class="small-item">3、您可以本人签收商品或委托他人代为签收商品，被委托人的签收视为收货人本人签收。</view>
+            <view class="small-item">苏打客服热线400-1808-400；客服服务时间：周日至周四09:00-22:00，周五至周六09:00-22:30</view>
+        </view>
+        <!-- 底部购物车 -->
+        <cover-view style="height:40px">
+        <van-goods-action class="bottom-nav">
+        <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
+        <van-goods-action-button open-type size="100px" text="加入购物车" color="#fcc" type="warning" info="5"/>
+        <van-goods-action-button text="立即购买" info="5"/>
+        </van-goods-action>
+        </cover-view>
+    </view>
+</view>
+
+

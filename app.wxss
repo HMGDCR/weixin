@@ -1,4 +1,51 @@
 /**app.wxss**/
+<<<<<<< HEAD
+body { background: #f1f0f6; }
+.bd { border: 1px solid; }
+.bdb {border-bottom: 1px solid #ebebeb;}
+.ovh {overflow:hidden;}
+.h100pc { height: 100%; }
+.w100pc { width: 100%; }
+.dsn { display: none; }
+.fixed { position: fixed; }
+.rel { position: relative; }
+.abs { position: absolute; }
+.tac { text-align: center; }
+.lh15 { line-height: 1.5; }
+ /* 颜色 */
+.f999 { color: #999; }
+.fff { color: #ffffff; }
+ /* 背景颜色 */
+.bg-green { background: green; }
+.bg-gray { background: gray; }
+.bg-fff { background: #ffffff; }
+
+ /* 弹性盒子公共样式 */
+ /* 排列方向-横向排列 */
+.flex {
+    display: flex;
+}
+ /* 纵向排列 */
+.flex2 {display:flex; flex-direction: column; }
+ /* 水平居中,垂直居中 */
+.fcc {
+=======
+/* .container {
+  height: 100%;
+>>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ /* 两端对齐 */
+.jc-sb {
+  justify-content: space-between;
+<<<<<<< HEAD
+=======
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+
 body { background: #f1f0f6; }
 .bd { border: 1px solid; }
 .bdb {border-bottom: 1px solid #ebebeb;}
@@ -35,6 +82,7 @@ body { background: #f1f0f6; }
  /* 两端对齐 */
 .jc-sb {
   justify-content: space-between;
+>>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
 }
  /* 分散对齐 */
 .jc-sa {
@@ -87,6 +135,10 @@ body { background: #f1f0f6; }
 .mb-20 {margin-bottom: 20px;}
 .mb-25 {margin-bottom: 25px;}
 .mb-30 {margin-bottom: 30px;}
+<<<<<<< HEAD
+=======
+.mb-94 {margin-bottom: 94px;}
+>>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
 
  /* margin-left设置 */
 .ml-5 {margin-left: 5px;}
@@ -134,5 +186,9 @@ body { background: #f1f0f6; }
 .pb-15 {padding-bottom: 15px;}
 .pb-20 {padding-bottom: 20px;}
 .pb-25 {padding-bottom: 25px;}
+<<<<<<< HEAD
 .pb-30 {padding-bottom: 30px;}
 
+=======
+.pb-30 {padding-bottom: 30px;}
+>>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26

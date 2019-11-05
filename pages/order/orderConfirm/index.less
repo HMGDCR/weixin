@@ -1,0 +1,188 @@
+.topNave {
+    width: 100%;
+    .van-sticky-wrap {
+        width: 100%;
+    }
+}
+.confirmOrderPage {
+    background: #f4f4f4;
+    min-height: 100vh;
+    margin-bottom: 100rpx;
+}
+.topNavagator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 88rpx;
+    background: #ffffff;
+    .arrowLeft {
+        font-size: 40rpx;
+        padding-left: 20rpx;
+    }
+    .confirmOrder {
+        font-size: 34rpx;
+        padding-right: 50rpx;
+    }
+    .colcorLine {
+        width: 100%;
+    }
+}
+.address {
+    display: flex;
+    align-items: center;
+    height: 152rpx;
+    padding: 34rpx 56rpx 34rpx 0;
+    background: #ffffff;
+    van-icon {
+        font-size: 60rpx;
+        padding-left: 36rpx;
+        padding-right: 20rpx;
+    }
+    .addresInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .personInfo {
+            text {
+                font-size: 30rpx;
+                color: #797d82;
+            }
+            .name {
+                color: #191a1b;
+            }
+        }
+        .location {
+            font-size: 26rpx;
+            color: #797d82;
+        }
+    }
+}
+// 订单信息
+.orderInfo {
+    background: #ffffff;
+    margin-top: 20rpx;
+    .express {
+        height: 68rpx;
+        padding: 30rpx 20rpx 0 20rpx;
+        font-size: 26rpx;
+    }
+    .goodsInfo {
+        height: 240rpx;
+        margin-left: 20rpx;
+        display: flex;
+        align-items: center;
+        border-bottom: 2rpx solid #ededed;
+        box-sizing: border-box;
+        cover-image {
+            width: 170rpx;
+            height: 170rpx;
+            background: #f4f4f4;
+        }
+        .goodsDescribe {
+            height: 180rpx;
+            padding-right: 30rpx;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 20rpx;
+            .name {
+                font-size: 30rpx;
+                color: #191a1b;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: 18em;
+            }
+            .priceInfo {
+                display: flex;
+                justify-content: space-between;
+                .ren {
+                    font-size: 20rpx;
+                    color: #c03131;
+                }
+                .price {
+                    font-size: 30rpx;
+                    color: #c03131;
+                }
+                .buyNum {
+                    font-size: 30rpx;
+                    color: #bdc0c5;
+                }
+            }
+        }
+    }
+    .gooodsPriceInfo {
+        box-sizing: border-box;
+        height: 98rpx;
+        padding: 24rpx 30rpx;
+        line-height: 64rpx;
+        display: flex;
+        justify-content: space-between;
+        .goodsPrice {
+            font-size: 26rpx;
+            color: #797d82;
+        }
+        .ren {
+            font-size: 20rpx;
+            color: #c03131;
+        }
+        .price {
+            font-size: 30rpx;
+            color: #c03131;
+        }
+    }
+}
+// 卡券
+.coupon {
+    margin-top: 20rpx;
+    .van-icon {
+        font-size: 50rpx;
+    }
+    .coupon-o {
+        .van-cell__title,.van-cell__value {
+            font-size: 30rpx;
+            color: #191a1b;
+        }
+        .van-icon {
+            color: #EAA68D;
+        }
+        .van-icon-arrow {
+            font-size: 30rpx;
+            color: #BDCADD;
+        }
+    }
+    .gift-card-o {
+        .van-cell__title,.van-cell__value {
+            font-size: 30rpx;
+            color: #191a1b;
+        }
+        .van-icon {
+            color: #CC318E;
+        }
+        .van-icon-arrow {
+            font-size: 30rpx;
+            color: #BDCADD;
+        }
+    }
+    .peer-pay {
+        .van-cell__title,.van-cell__value {
+            font-size: 30rpx;
+            color: #191a1b;
+        }
+        .van-icon {
+            color: #CC318E;
+        }
+        .van-icon-arrow {
+            font-size: 30rpx;
+            color: #BDCADD;
+        }
+    }
+}
+.submitButton {
+    .van-button {
+        background: #c03131;
+    }
+    .van-submit-bar__price {
+        color: #c03131;
+    }
+}

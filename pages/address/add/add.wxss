@@ -1,1 +1,27 @@
-/* pages/address/add/add.wxss */
+.Preservation {
+  margin-top: 20rpx;
+}
+.trueOrfales {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 72rpx;
+}
+.trueOrfales .Swith {
+  margin: 10rpx 0px 0px 20rpx;
+}
+.trueOrfales text {
+  font-size: 26rpx;
+  margin-left: 28rpx;
+}
+.hander {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72rpx;
+  width: 58%;
+}
+.hander .hanone {
+  margin-left: 18rpx;
+  font-size: 35rpx;
+}
