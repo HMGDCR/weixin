@@ -29,7 +29,7 @@ clearable  是否启用清除控件
         <van-switch class="Swith"  checked="{{ checked }}" size="20px" />
     </view>
     <view class="Preservation mar">
-        <van-button type="warning" color="#ee0a24" size="large">保存</van-button>
+        <van-button type="warning" color="#c03131" size="large">保存</van-button>
         <view class="Preservation"></view>
         <van-button type="default" size="large" custom-style="margin=17px;">删除</van-button>
     </view>

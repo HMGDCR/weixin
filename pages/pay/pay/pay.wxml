@@ -1,2 +1,25 @@
 <!--pages/pay/pay/pay.wxml-->
-<text>pages/pay/pay/pay.wxml</text>
+<view class="payment">
+        <!-- 导航栏 -->
+        <view class="navPay" >
+            <van-nav-bar title="微信支付" left-arrow >
+                <van-icon name="wap-home-o" slot="left" style="color:black;" bindtap="goHome" />
+            </van-nav-bar>
+        </view>
+        <!-- 商品信息 -->
+        <view class="ctxPay">
+            <view class="titlePay">苏打优选商品</view>
+            <view class="pricePay">￥0</view>
+        </view>
+        <!-- 收款方 -->
+        <view class="context">
+            <view class="collectPay">
+                <view class="leftPay">收款方</view>
+                <view class="rightPay">苏打优选</view>
+            </view>
+        </view>
+        <!-- 支付按钮 -->
+        <view class="btnPay">
+            <van-button type="primary" size="large" bindtap="goHome">立即支付</van-button>
+        </view>
+    </view>

@@ -17,9 +17,9 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "每日优鲜",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar":{
@@ -102,7 +102,6 @@
     "van-tabs": "./dist/tabs/index",
     "van-tabbar": "./dist/tabbar/index",
     "van-tabbar-item": "./dist/tabbar-item/index",
-   
     "van-toast": "./dist/toast/index",
     "van-transition": "./dist/transition/index",
     "van-tree-select": "./dist/tree-select/index",
