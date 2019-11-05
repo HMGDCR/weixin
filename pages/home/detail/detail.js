@@ -5,9 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    radio: '1',
+    count: 2,
+    current: 0,
+    show: false,
+    show2: false,
+    show3: false,
   },
-
+  goBack:function(){
+    this.$router.go(-1)
+  },
+  buyImmediate:function(){
+      this.$router.push("/order/confirm")
+  },
+  onClickIcon:function() {
+      this.$router.push("/cart/befor")
+  },
+  onClickButton:function() {
+      
+  },
+  onChange:function(index) {
+      this.current = index;
+  },
   /**
    * 生命周期函数--监听页面加载
    */
