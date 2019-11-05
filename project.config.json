@@ -15,7 +15,12 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.9.1",
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"appid": "wx57ce4777ef580cda",
+=======
+	"appid": "wxd2abc0c0fe268724",
+	"projectname": "miniFresh",
+>>>>>>> b4a64fca91c4693163d678ee26472930f6aed6a3
 =======
 <<<<<<< HEAD
 	"appid": "wx8ac3b054084a8fac",
@@ -24,6 +29,7 @@
 >>>>>>> 312ba214247c2fe2bcaba3f1de491935cd2bdb32
 >>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
 	"projectname": "miniproject",
+>>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -92,8 +98,13 @@
 				{
 					"id": -1,
 <<<<<<< HEAD
+<<<<<<< HEAD
 					"name": "pages/category/category",
 					"pathName": "pages/address/list/list",
+=======
+					"name": "pages/cart/cart",
+					"pathName": "pages/cart/cart",
+>>>>>>> b4a64fca91c4693163d678ee26472930f6aed6a3
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -139,7 +150,11 @@
 					"name": "pages/order/orderConfirm/index",
 					"pathName": "pages/order/orderConfirm/index",
 >>>>>>> b14d198fb75f789c9f1a46caa92e2ed5c74cb30f
+<<<<<<< HEAD
 >>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
+=======
+>>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
+>>>>>>> b4a64fca91c4693163d678ee26472930f6aed6a3
 					"scene": null
 				}
 			]
