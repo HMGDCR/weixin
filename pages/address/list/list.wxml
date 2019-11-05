@@ -1,2 +1,75 @@
 <!--pages/address/list/list.wxml-->
-<text>pages/address/list/list.wxml</text>
+  <view class="first">  
+    <view class="move-up">
+      <!-- 中部地址栏 -->
+      <view class="view-main" >
+        <view class="address-list-item">
+          <view class="info">
+            <view class="addressee">陈媛媛 1888 1888 1888</view>
+            <view class="address-detail">广东省深圳市龙岗区龙岗区龙岗区龙岗街道左创智慧创新大夏</view>
+          </view>
+          <view class="operation">
+            <view class="isDefault" >
+              <van-radio-group  value="{{ radio }}" bind:change="onChange">
+                <van-radio name="1"  checked-color="#07c160">
+                  <text class="defaultAddress">默认地址</text>
+                </van-radio>
+              </van-radio-group>
+            </view>
+            <view class="delEdit">
+              <view class="delete" >
+                <image class="deleteImg"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAURJREFUWAntV0tOw0AMtYeqO3bdlLMgdmyAK5Rlr4BoCQqM2gipt6g4Amwj1C3ngCtQocaMgZTGcvMDxAKPFCXP4/dkvTxFGQBbRQewCMvReeTvAOiovCvfxfvER8c5qrq7qoa2+4hEbbnGYwfWGWn2/n/KvK8c/VpG6oxqOarjUqGH8/KRmUL526BMt6Or1/1o6ezt1e26fxrWzYFtkE03+NkcMUekAxJbRswR6YDElhFzRDogsZoRBHzmxtFk0peEtjjXyrWljjoIID1yI73QQBJa42V2+s791JY66h8aOjejFZ0gZn506bHruvM4PnuS5Do4jm/2lqvXMER2hQgZa2u89blGboYBxsGT63Bw1F2ThArMQxC5KPEXU611RytybfGQLvYPDtPgSi8cw3ZDia/mCyE4iSlAZ5j48W1zgf/KeAOwFlCgegMJjAAAAABJRU5ErkJggg=="
+                />
+                <text class="deleteText">删除</text>
+              </view>
+              <view class="edit" >
+                <image class="editImg"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAgpJREFUWAntlzFLw0AUx++SalERQXTxKzi6quDgoqOzqx9AEJvUlNBIQhH6BRyli+Cooy3q6qZfwcWpQy2tbc57SZ/k0p5NeqEg9CC53LuX937535G7I2RWRAWo2JxOy7arqx2/dbSyOHdbKBSakDU3KrVhuTuU9s4YIVuEkY1RPnIbffAc61DWb7jueqfdqhPCNptf3+B2DbchEMO6NDmEwxjRwCFtoZS/KSkAQdr9AIIQ+p7Xlu7QVRiagRIN3tnjjqV5bf7Gts8/0FmljkOQBX3PM81PjCkoEgwHV4JSWnLLVgWdVOtxEBBfkD+YE9wISqgmx/eTQICvAIITc1rDgbDDINEexeekSmAaURG0KtZpISBd5iCTQGQOMilEpiBpIAzLuYcLALAI/xE0pq3TQISx2UE8h/IcSQ8RRwjbSiBZQQCKEojW6Z3CKgoLWHztGP3dcqvSHGFUr2lan/h5vRpdwOTp5D1KIK5dfOOhDXn45D1KQ5M8zXjPGUhco5ki/0QRSoKNsm1XUh4h4t8nb//GHuRCT2GO8C39K3R0/e4xOmRdY2zMhfGFHxpjuSu+k+eHI1Y2S06wic5q/wpKhBCsTCnxIRdCQC2ca8AQHrD8iQ9YEOOvEkJoludcuFE/PdqA55enx+ft3f06pf4ax1zmJrjUC58THKLBlTjxnGJNPeAswpQU+AERPvZb0LYpOgAAAABJRU5ErkJggg=="
+                />
+                <text class="editText">编辑</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="address-list-item">
+          <view class="info">
+            <view class="addressee">申凯枫 155 5555 5555</view>
+            <view class="address-detail">广西省南宁市青秀区民族大道山水美地B座03栋901</view>
+          </view>
+          <view class="operation">
+            <view class="isDefault" >
+              <van-radio-group  bind:change="onChange" value="{{ radio }}">
+                <van-radio name="2"  checked-color="#07c160">
+                  <text class="defaultAddress">默认地址</text>
+                </van-radio>
+              </van-radio-group>
+            </view>
+            <view class="delEdit">
+              <view class="delete" >
+                <image class="deleteImg"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAURJREFUWAntV0tOw0AMtYeqO3bdlLMgdmyAK5Rlr4BoCQqM2gipt6g4Amwj1C3ngCtQocaMgZTGcvMDxAKPFCXP4/dkvTxFGQBbRQewCMvReeTvAOiovCvfxfvER8c5qrq7qoa2+4hEbbnGYwfWGWn2/n/KvK8c/VpG6oxqOarjUqGH8/KRmUL526BMt6Or1/1o6ezt1e26fxrWzYFtkE03+NkcMUekAxJbRswR6YDElhFzRDogsZoRBHzmxtFk0peEtjjXyrWljjoIID1yI73QQBJa42V2+s791JY66h8aOjejFZ0gZn506bHruvM4PnuS5Do4jm/2lqvXMER2hQgZa2u89blGboYBxsGT63Bw1F2ThArMQxC5KPEXU611RytybfGQLvYPDtPgSi8cw3ZDia/mCyE4iSlAZ5j48W1zgf/KeAOwFlCgegMJjAAAAABJRU5ErkJggg=="
+                />
+                <text class="deleteText">删除</text>
+              </view>
+              <view class="edit" >
+                <image class="editImg"
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAgpJREFUWAntlzFLw0AUx++SalERQXTxKzi6quDgoqOzqx9AEJvUlNBIQhH6BRyli+Cooy3q6qZfwcWpQy2tbc57SZ/k0p5NeqEg9CC53LuX937535G7I2RWRAWo2JxOy7arqx2/dbSyOHdbKBSakDU3KrVhuTuU9s4YIVuEkY1RPnIbffAc61DWb7jueqfdqhPCNptf3+B2DbchEMO6NDmEwxjRwCFtoZS/KSkAQdr9AIIQ+p7Xlu7QVRiagRIN3tnjjqV5bf7Gts8/0FmljkOQBX3PM81PjCkoEgwHV4JSWnLLVgWdVOtxEBBfkD+YE9wISqgmx/eTQICvAIITc1rDgbDDINEexeekSmAaURG0KtZpISBd5iCTQGQOMilEpiBpIAzLuYcLALAI/xE0pq3TQISx2UE8h/IcSQ8RRwjbSiBZQQCKEojW6Z3CKgoLWHztGP3dcqvSHGFUr2lan/h5vRpdwOTp5D1KIK5dfOOhDXn45D1KQ5M8zXjPGUhco5ki/0QRSoKNsm1XUh4h4t8nb//GHuRCT2GO8C39K3R0/e4xOmRdY2zMhfGFHxpjuSu+k+eHI1Y2S06wic5q/wpKhBCsTCnxIRdCQC2ca8AQHrD8iQ9YEOOvEkJoludcuFE/PdqA55enx+ft3f06pf4ax1zmJrjUC58THKLBlTjxnGJNPeAswpQU+AERPvZb0LYpOgAAAABJRU5ErkJggg=="
+                />
+                <text class="editText">编辑</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 底部新建栏 -->
+    <view class="address-list-button" >
+      <view class="buttonDiv">
+        <image  class="buttonImg"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAJtJREFUWAntlUsKwCAMRLXtxut4gZ69F/A8rvpRiMjgRkMhiwkIjvgZXwLxzxfOQGxaD3fOrgxteC2RK8bq4UxJ5UVNRPV6d5hGOhh1SiIkggRQs0ZIBAmgZo0gkdZ9pYvihr+1dG0zqWlEVn8uJOVnq/eYIUIjmEISIREkgJo1QiJIALWZGjnQ2azeQ5g9Mtyv7r7DWxcWzaTmBRgwIx+QoVW4AAAAAElFTkSuQmCC"
+        />
+        <text class="buttonText">新建地址</text>
+      </view>
+    </view>
+  </view>
