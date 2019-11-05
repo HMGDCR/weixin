@@ -76,7 +76,6 @@
   .cart-befor {
     height: 100vh;
     background-color: #f4f4f4;
-    /* background: url(../../img/background.png) */
   }
   .van-card__bottom {
     line-height: 40rpx;
