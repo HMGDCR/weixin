@@ -1,2 +1,68 @@
-<!--pages/home/homePage/index.wxml-->
-<text>首页</text>
+ <view class="mainContent">
+    <!-- 轮播图 -->
+    <view class="container">
+        <view class="page-body">
+            <view class="page-section page-section-spacing swiper">
+                <swiper class="swiperContent" indicator-dots="{{indicatorDots}}"
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                    <block wx:for="{{background}}" wx:key="*this">
+                        <swiper-item>
+                            <image src="http://huruqing.cn/static/img/fresh/other/banner1.jpeg"></image>
+                        </swiper-item>
+                    </block>
+                </swiper>
+            </view>
+        </view>
+    </view>
+    <!-- 宫格 -->
+    <view class="gridContent">
+        <van-grid column-num="4" class="grid" border="{{ false }}">
+            <van-grid-item icon="http://huruqing.cn/static/img/fresh/other/r2.png" text="文字" wx:for="{{ 8 }}" wx:key="*this" />
+        </van-grid>
+    </view>
+      
+    <!-- 主体内容-->
+    <view class="content">
+        <van-sticky class="listNave">
+            <view class="navagater">
+                <view> 推荐 </view>
+                <view class="sales">
+                    <text>销量</text>
+                    <view class="van-icon-style">
+                        <van-icon name="arrow-up" />
+                        <van-icon name="arrow-down" />
+                    </view>
+                </view>
+                <view class="sales">
+                    <text>价格</text>
+                    <view class="van-icon-style">
+                        <van-icon name="arrow-up" />
+                        <van-icon name="arrow-down" />
+                    </view>
+                </view>
+            </view>
+        </van-sticky>
+        <view class="goods">
+            <view class="listItem">
+                <image src="https://mall.s.maizuo.com/1f8134cb7efe19ea0cfc86a1c84ff4c2.png?x-oss-process=image/resize,w_248"></image>
+                <view class="textDescribe">
+                    <text class="goodsName">【广东】 港式网红鱼皮</text>
+                    <text class="goodDetails">选取新鲜巴沙鱼皮 酥脆香浓口感 富含胶原蛋白</text>
+                    <view class="price">
+                        <text class="ren">￥</text><text class="priceNum">38.9</text>
+                    </view>
+                </view>
+            </view>
+            <view class="listItem">
+                <image src="https://mall.s.maizuo.com/1f8134cb7efe19ea0cfc86a1c84ff4c2.png?x-oss-process=image/resize,w_248"></image>
+                <view class="textDescribe">
+                    <text class="goodsName">【广东】 港式网红鱼皮</text>
+                    <text class="goodDetails">选取新鲜巴沙鱼皮 酥脆香浓口感 富含胶原蛋白</text>
+                    <view class="price">
+                        <text class="ren">￥</text><text class="priceNum">38.9</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,131 @@
+.mainContent {
+    background: #f4f4f4;
+}
+// 轮播图样式
+.container {
+    .page-body {
+        .page-section {
+            .swiperContent {
+                height: 420rpx;
+                image {
+                    width: 100%;
+                    height: 420rpx;
+                } 
+            }
+        }
+    }
+}
+// 宫格样式调整
+.gridContent {
+    padding: 30rpx 0;
+    background: #ffffff;
+    .grid {
+        height: 320rpx;
+        .van-grid {
+            height: 320rpx;
+            .van-grid-item {
+                height: 160rpx;
+                .van-grid-item__content {
+                    padding: 16rpx 48rpx 16rpx 16rpx;
+                    .van-grid-item__icon {
+                        width: 90rpx;
+                        height: 90rpx;
+                        image {
+                            width: 90rpx;
+                            height: 90rpx;
+                        }
+                    }
+                    .van-grid-item__text {
+                        padding-left: 40rpx;
+                        padding-top: 8rpx;
+                    }
+                }
+            }
+        }
+    }
+}
+// 主体内容
+.content {
+    background: #ffffff;
+    margin-top:20rpx;
+    .listNave {
+        width: 100%;
+        .van-sticky-wrap {
+            width: 100%;
+            background: #ffffff;
+        }
+    }
+    .navagater {
+        height: 88rpx;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: #797d82;
+        font-size: 28rpx;
+        border-bottom: 2rpx solid #ededed;
+        .sales {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            .van-icon-style {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                font-size: 12rpx;
+                margin-left: 10rpx;
+            }
+        }
+    }
+    .goods {
+        padding-top: 30rpx;
+        padding-right: 30rpx;
+        padding-left: 30rpx;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .listItem {
+            width: 330rpx;
+            height: 474rpx;
+            margin-bottom: 40rpx;
+            image {
+                width: 330rpx;
+                height: 330rpx;
+                background: #f4f4f4;
+            }
+            .textDescribe {
+                display: flex;
+                flex-direction: column;
+                .goodsName {
+                    margin-top: 24rpx;
+                    color: #2c3e50;
+                    font-size: 28rpx;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    max-width: 20rem;
+                }
+                .goodDetails {
+                    font-size: 24rpx;
+                    color: #797d82;
+                    margin-top: 14rpx;
+                    margin-bottom: 10rpx;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    max-width: 20rem;
+                }
+                .price {
+                    color: #c03131;
+                    .ren {
+                        font-size: 20rpx;
+                        padding-right: 6rpx;
+                    }
+
+                    .priceNum {
+                        font-size: 30rpx;
+                    }
+                }
+            }
+        }
+    }
+}

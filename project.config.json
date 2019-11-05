@@ -78,6 +78,20 @@
 					"id": -1,
 					"name": "pages/my/index",
 					"pathName": "pages/my/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/homePage/index",
+					"pathName": "pages/home/homePage/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/orderConfirm/index",
+					"pathName": "pages/order/orderConfirm/index",
 					"scene": null
 				}
 			]
