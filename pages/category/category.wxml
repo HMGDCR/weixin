@@ -1,2 +1,41 @@
-<!--pages/category/category.wxml-->
-<text>类别列表</text>
+<view class="sort-content">
+
+    <!--  导航栏  -->
+    <view class="title">
+
+
+        <van-search value="{{ value }}" placeholder="请输入搜索关键词" use-action-slot bind:search="onSearch" shape='round'>
+            <view slot="action" bind:tap="onSearch">搜索</view>
+        </van-search>
+
+    </view>
+
+    <!-- 分类选择内容 -->
+    <view class="shop-content">
+        <view class="shop-select">
+
+            <van-sidebar active="{{ active }}" bind:change="onChange">
+                <van-sidebar-item title="百果园" />
+                <van-sidebar-item title="时令鲜果" />
+                <van-sidebar-item title="地方特产" />
+            </van-sidebar>
+        </view>
+        <view class="shop-main">
+            <van-grid column-num="2" border="{{ false }}" class="shop-list">
+                <van-grid-item use-slot wx:for="{{ 3 }}" wx:for-item="index">
+                    <view class="shop-items">
+
+                        <image style="height:240rpx;width:240rpx;background: #f4f4f4"
+                            src="https://mall.s.maizuo.com/3484d2c4a5b30f1e7c6282096a2816b9.png?x-oss-process=image/resize,w_248" />
+
+
+                        <text class="shop-title">A级-阳光冬枣（中）约2.6-3斤</text>
+                        <text class="shop-price">￥99</text>
+                    </view>
+                </van-grid-item>
+
+            </van-grid>
+
+        </view>
+    </view>
+</view>

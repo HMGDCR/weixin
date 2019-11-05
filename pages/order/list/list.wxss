@@ -1,1 +1,113 @@
-/* pages/order/list/list.wxss */
+.padd-15 {
+    padding: 30rpx 30rpx 0 30rpx;
+}
+
+.border-line {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 80rpx;
+    height: 80rpx;
+    border-bottom: 2rpx solid #ece9e9;
+    border-top: 2rpx solid #ece9e9;
+    
+    z-index: 3
+}
+
+.van-card[data-v-55a01f0e] {
+    border-bottom: 2rpx solid #ECE9E9;
+ 
+
+}
+
+.van-card:not(:first-child) {
+    margin-top: 0
+}
+
+van-nav-bar .van-icon {
+    color: #2e2f30;
+    font-size: 44rpx
+}
+
+.order-list {
+    height: 100%;
+    background: #fff
+}
+.order-list .van-card{
+  background: #fff
+}
+.order-list .navagator {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9
+}
+.van-card__header{
+  background: #fff
+}
+.order-list .goodsDetail {
+    margin-top: 45px;
+    background: #fff
+}
+
+img {
+    width: 140rpx;
+    height: 140rpx
+}
+
+.van-card__thumb {
+    width: 140rpx;
+    height: 140rpx
+}
+
+.van-image__error,
+.van-image__img,
+.van-image__loading {
+    width: 140rpx;
+    height: 140rpx
+}
+
+.van-card__content {
+    height: 140rpx
+}
+
+.van-card__header {
+    min-height: 140rpx
+}
+
+.van-card__bottom {
+    line-height: 40rpx;
+    margin-top: 64rpx
+}
+
+.van-card {
+    background: white
+}
+
+.flr {
+    float: left;
+    line-height: 90rpx;
+    color: #bdc0c5
+}
+
+.buttosize {
+  font-size: 26rpx;
+    width: 172rpx; 
+   height: 66rpx;
+display: flex;
+align-items: center;
+justify-content: center;
+  
+    border: 2rpx solid #2e2f30;
+    box-sizing: border-box
+}
+
+.margin-top {
+    height: 90rpx;
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10rpx;
+    padding: 0 20rpx
+}

@@ -13,13 +13,9 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.1",
-<<<<<<< HEAD
-	"appid": "wx8ac3b054084a8fac",
-=======
-	"appid": "wx713318c47d89e43d",
->>>>>>> 312ba214247c2fe2bcaba3f1de491935cd2bdb32
-	"projectname": "miniproject",
+	"libVersion": "2.9.2",
+	"appid": "wx4e69c623dedf7a3b",
+	"projectname": "sanzu",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -52,66 +48,15 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "pages/home/homePage",
-					"pathName": "pages/home/homePage",
+					"name": "1",
+					"pathName": "pages/category/category",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/logs/logs",
-					"pathName": "pages/logs/logs",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/index/index",
-					"pathName": "pages/index/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/index/index",
-					"pathName": "pages/index/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/my/index",
-					"pathName": "pages/my/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-<<<<<<< HEAD
-<<<<<<< HEAD
-					"name": "pages/home/homePage",
-					"pathName": "pages/home/detail/detail",
-=======
-					"name": "pages/home/homePage/index",
-					"pathName": "pages/home/homePage/index",
->>>>>>> b14d198fb75f789c9f1a46caa92e2ed5c74cb30f
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-<<<<<<< HEAD
-					"name": "pages/home/detail/detail",
-					"pathName": "pages/home/detail/detail",
-=======
-					"name": "pages/address/add/add",
-					"pathName": "pages/address/add/add",
-					"query": "",
->>>>>>> 312ba214247c2fe2bcaba3f1de491935cd2bdb32
-=======
-					"name": "pages/order/orderConfirm/index",
-					"pathName": "pages/order/orderConfirm/index",
->>>>>>> b14d198fb75f789c9f1a46caa92e2ed5c74cb30f
+					"name": "2",
+					"pathName": "pages/order/list/list",
 					"scene": null
 				}
 			]
