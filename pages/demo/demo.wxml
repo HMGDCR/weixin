@@ -1,2 +1,3 @@
 <!--pages/demo/demo.wxml-->
-<text>pages/demo/demo.wxml</text>
+<text>demo</text>
+<van-button type="primary">asdf</van-button>
