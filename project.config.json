@@ -13,6 +13,10 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
 	"libVersion": "2.9.1",
 	<<
 	<< << < HEAD <<
@@ -28,11 +32,24 @@
 	===
 	=== =
 	"appid": "wx713318c47d89e43d",
+<<<<<<< HEAD
 	>>>
 	>>> > 312 ba214247c2fe2bcaba3f1de491935cd2bdb32 >>>
 	>>> > 864 d1c8a5d3fd6217b067001721646cd0e292fac "projectname": "miniproject",
 	>>>
 	>>> > 53 dd58129df25641625ae197be8c3a1003b5ef26 "debugOptions": {
+=======
+>>>>>>> 312ba214247c2fe2bcaba3f1de491935cd2bdb32
+>>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
+	"projectname": "miniproject",
+>>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
+=======
+	"libVersion": "2.9.2",
+	"appid": "wx4e69c623dedf7a3b",
+	"projectname": "sanzu",
+>>>>>>> 486b91a74385b2eeea94fcb4a2bd7cdbd6a281d8
+	"debugOptions": {
+>>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
 		"hidedInDevtools": []
 	},
 	"isGameTourist": false,
@@ -70,6 +87,10 @@
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
 					"name": "pages/logs/logs",
 					"pathName": "pages/logs/logs",
 					"query": "",
@@ -154,6 +175,7 @@
 					=== =
 					"name": "pages/order/orderConfirm/index",
 					"pathName": "pages/order/orderConfirm/index",
+<<<<<<< HEAD
 					>>>
 					>>> > b14d198fb75f789c9f1a46caa92e2ed5c74cb30f <<
 					<< << < HEAD >>>
@@ -161,6 +183,19 @@
 					=== = >>>
 					>>> > 53 dd58129df25641625ae197be8c3a1003b5ef26 >>>
 					>>> > b4a64fca91c4693163d678ee26472930f6aed6a3 "scene": null
+=======
+>>>>>>> b14d198fb75f789c9f1a46caa92e2ed5c74cb30f
+<<<<<<< HEAD
+>>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
+=======
+>>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
+>>>>>>> b4a64fca91c4693163d678ee26472930f6aed6a3
+=======
+					"name": "2",
+					"pathName": "pages/order/list/list",
+>>>>>>> 486b91a74385b2eeea94fcb4a2bd7cdbd6a281d8
+					"scene": null
+>>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
 				}
 			]
 		}

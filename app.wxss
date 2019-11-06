@@ -1,4 +1,4 @@
-/**app.wxss**/
+
 body { background: #f1f0f6; }
 .bd { border: 1px solid; }
 .bdb {border-bottom: 1px solid #ebebeb;}
@@ -87,6 +87,7 @@ body { background: #f1f0f6; }
 .mb-20 {margin-bottom: 20px;}
 .mb-25 {margin-bottom: 25px;}
 .mb-30 {margin-bottom: 30px;}
+.mb-94 {margin-bottom: 94px;}
 
  /* margin-left设置 */
 .ml-5 {margin-left: 5px;}
