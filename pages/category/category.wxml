@@ -22,7 +22,7 @@
         </view>
         <view class="shop-main">
             <van-grid column-num="2" border="{{ false }}" class="shop-list">
-                <van-grid-item use-slot wx:for="{{ 3 }}" wx:for-item="index">
+                <van-grid-item use-slot >
                     <view class="shop-items">
 
                         <image style="height:240rpx;width:240rpx;background: #f4f4f4"
@@ -33,7 +33,28 @@
                         <text class="shop-price">￥99</text>
                     </view>
                 </van-grid-item>
+ <van-grid-item use-slot >
+                    <view class="shop-items">
 
+                        <image style="height:240rpx;width:240rpx;background: #f4f4f4"
+                            src="https://mall.s.maizuo.com/3484d2c4a5b30f1e7c6282096a2816b9.png?x-oss-process=image/resize,w_248" />
+
+
+                        <text class="shop-title">A级-阳光冬枣（中）约2.6-3斤</text>
+                        <text class="shop-price">￥99</text>
+                    </view>
+                </van-grid-item>
+                 <van-grid-item use-slot >
+                    <view class="shop-items">
+
+                        <image style="height:240rpx;width:240rpx;background: #f4f4f4"
+                            src="https://mall.s.maizuo.com/3484d2c4a5b30f1e7c6282096a2816b9.png?x-oss-process=image/resize,w_248" />
+
+
+                        <text class="shop-title">A级-阳光冬枣（中）约2.6-3斤</text>
+                        <text class="shop-price">￥99</text>
+                    </view>
+                </van-grid-item>
             </van-grid>
 
         </view>

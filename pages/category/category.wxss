@@ -1,3 +1,8 @@
+.van-sidebar-item--selected {
+  border-color: var(--sidebar-selected-border-color,green);
+
+}
+
 .van-grid-item .van-grid-item__content {
     padding: 5px 5px
 }
@@ -97,7 +102,7 @@
 }
 
 .shop-content .shop-main .shop-list .shop-price {
-    color: #ee0a24;
+    color: #C03131;
     text-align: left;
     display: inline-block;
     width: 100%;
