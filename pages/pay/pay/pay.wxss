@@ -1,1 +1,69 @@
 /* pages/pay/pay/pay.wxss */
+.navPay .van-nav-bar {
+  height: 88rpx;
+  line-height: 88rpx;
+  padding-top: 0rpx;
+}
+.payment {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+.payment .van-nav-bar__title {
+  font-size: 34rpx;
+}
+.payment .van-icon,
+.payment .van-icon::before {
+  color: #565958;
+  font-size: 46rpx;
+  font-weight: 100;
+  padding-bottom: 12rpx;
+}
+.payment .ctxPay {
+  width: 100vw;
+  text-align: center;
+}
+.payment .ctxPay .titlePay {
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  color: #2c3e50;
+  height: 44rpx;
+  line-height: 44rpx;
+}
+.payment .ctxPay .pricePay {
+  margin-top: 40rpx;
+  color: #2d3e4f;
+  font-size: 60rpx;
+  font-weight: 700;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.payment .context {
+  width: 100vw;
+  border-top: 2rpx solid #eae8e8;
+  border-bottom: 2rpx solid #eae8e8;
+  margin-top: 20rpx;
+  color: #2c3e50;
+}
+.payment .context .collectPay {
+  height: 98rpx;
+  line-height: 98rpx;
+  font-size: 30rpx;
+  margin: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.payment .btnPay {
+  width: 97.5%;
+  margin: 0 auto;
+}
+.payment .btnPay .van-button {
+  border-radius: 20rpx;
+  margin-top: 56rpx;
+  background: #04be01;
+}
+.payment .van-button {
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+}
