@@ -1,44 +1,32 @@
+<view class="order-list">
+  <view class="navagator">
 
-  <view class="order-list">
-    <view class="navagator">
-      
-      <!-- 标签栏 -->
-      <view style="color:#797d82;">
-        <van-tabs>
-          <van-tab title="全部"></van-tab>
-          <van-tab title="待分享"></van-tab>
-          <van-tab title="待付款"></van-tab>
-          <van-tab title="待发货"></van-tab>
-          <van-tab title="待收货"></van-tab>
-        </van-tabs>
-      </view>
+    <!-- 标签栏 -->
+    <view style="color:#797d82;">
+      <van-tabs>
+        <van-tab title="全部"></van-tab>
+        <van-tab title="待分享"></van-tab>
+        <van-tab title="待付款"></van-tab>
+        <van-tab title="待发货"></van-tab>
+        <van-tab title="待收货"></van-tab>
+      </van-tabs>
     </view>
-    <!-- 商品详情 -->
-    <view class="goodsDetail">
-      <view class="goodsBox" style="margin-top:20rpx;" >
-        <van-card
-          class="padd-15"
-        num="1"
-        price="42.5"
-        title="海边理发店"
-        thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
-        style="font-size: 30rpx;background-color: #fff;"
-        
-        />
-        <view slot="footer" style="height:80rpx" class="border-line">
-          <view style="height:26rpx;font-size:26rpx;padding-right:20rpx">
-            共1件商品    <text style="padding-left:20rpx"></text> 实付￥
-            <text    style="color:red;font-size:30rpx">700</text>
-          </view>
+  </view>
+  <!-- 商品详情 -->
+  <view class="goodsDetail">
+    <view class="goodsBox" style="margin-top:20rpx;">
+      <van-card class="padd-15" num="1" price="42.5" title="海边理发店" thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+        style="font-size: 30rpx;background-color: #fff;" />
+      <view slot="footer" style="height:80rpx" class="border-line">
+        <view style="height:26rpx;font-size:26rpx;padding-right:20rpx">
+          共1件商品 <text style="padding-left:20rpx"></text> 实付￥
+          <text style="color:#C03131;font-size:30rpx">700</text>
         </view>
-        <view slot="footer" class="margin-top">
-          <text class="flr">已取消</text>
-          <view class="buttosize">重新购买</view>
-        </view>
+      </view>
+      <view slot="footer" class="margin-top">
+        <text class="flr">已取消</text>
+        <view class="buttosize">重新购买</view>
       </view>
     </view>
   </view>
-
-
-
-
+</view>

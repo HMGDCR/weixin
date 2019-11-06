@@ -1,7 +1,9 @@
 .van-sidebar-item--selected {
-  border-color: var(--sidebar-selected-border-color,green);
+    border-color: #C03131 !important;
 
 }
+
+
 
 .van-grid-item .van-grid-item__content {
     padding: 5px 5px

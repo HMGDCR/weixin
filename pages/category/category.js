@@ -11,11 +11,29 @@ Page({
       items: [{ text: "百果园" }, { text: "时令鲜果" }, { text: "家禽蛋" }]
   },
 
+getList:function(){
+  let url='https://huruqing.cn:3009/product/all';
+  let data={ };
+  wx.request({
+    url,
+    data,
+    success(res){
+console.log(res)
+    },
+    fail(err){
+console.log(err)
+    },
+    complete(){
+      console.log('完成')
+    }
+    
+  })
+},
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+this.getList()
   },
 
   /**

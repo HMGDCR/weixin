@@ -4,7 +4,7 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
@@ -21,48 +21,14 @@
 		}
 	},
 	"compileType": "miniprogram",
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
-	"libVersion": "2.9.1",
-	<<
-	<< << < HEAD <<
-	<< << < HEAD "appid": "wx57ce4777ef580cda",
-	===
-	=== =
-	"appid": "wxd2abc0c0fe268724",
-	"projectname": "miniFresh",
-	>>>
-	>>> > b4a64fca91c4693163d678ee26472930f6aed6a3 ===
-	=== = <<
-	<< << < HEAD "appid": "wx8ac3b054084a8fac",
-	===
-	=== =
-	"appid": "wx713318c47d89e43d",
-<<<<<<< HEAD
-	>>>
-	>>> > 312 ba214247c2fe2bcaba3f1de491935cd2bdb32 >>>
-	>>> > 864 d1c8a5d3fd6217b067001721646cd0e292fac "projectname": "miniproject",
-	>>>
-	>>> > 53 dd58129df25641625ae197be8c3a1003b5ef26 "debugOptions": {
-=======
->>>>>>> 312ba214247c2fe2bcaba3f1de491935cd2bdb32
->>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
-=======
-	"libVersion": "2.9.1",
-	"appid": "wxb7e7ea2bf6054faa",
->>>>>>> c5f4625595428358acbdb8bb938e107db2916918
-	"projectname": "miniproject",
+	"libVersion": "2.9.2",
+	"appid": "wx4e69c623dedf7a3b",
+	"projectname": "sanzu",
 	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
->>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
 		"hidedInDevtools": []
 	},
 	"scripts": {},
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -84,159 +50,51 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
-			"list": [{
+			"current": 0,
+			"list": [
+				{
 					"id": -1,
-<<<<<<< HEAD
-					"name": "pages/home/homePage",
-					"pathName": "pages/home/homePage",
-=======
-					"name": "pages/logs/logs",
-					"pathName": "pages/logs/logs",
->>>>>>> c5f4625595428358acbdb8bb938e107db2916918
+					"name": "1",
+					"pathName": "pages/category/category",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
-					"name": "pages/logs/logs",
-					"pathName": "pages/logs/logs",
-=======
-					"name": "pages/my/index",
-					"pathName": "pages/my/index",
->>>>>>> c5f4625595428358acbdb8bb938e107db2916918
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/home/homePage/index",
-					"pathName": "pages/home/homePage/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/order/orderConfirm/index",
-					"pathName": "pages/order/orderConfirm/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/my/index",
-					"pathName": "pages/my/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-<<<<<<< HEAD
-					<<
-					<< << < HEAD <<
-					<< << < HEAD "name": "pages/category/category",
-					"pathName": "pages/address/list/list",
-					===
-					=== =
-					"name": "pages/cart/cart",
-					"pathName": "pages/cart/cart",
-					>>>
-					>>> > b4a64fca91c4693163d678ee26472930f6aed6a3 ===
-					=== = <<
-					<< << < HEAD <<
-					<< << < HEAD "name": "pages/home/homePage",
-					"pathName": "pages/home/detail/detail",
-					===
-					=== =
-					"name": "pages/home/homePage/index",
-					"pathName": "pages/home/homePage/index",
-					>>>
-					>>> > b14d198fb75f789c9f1a46caa92e2ed5c74cb30f >>>
-					>>> > 864 d1c8a5d3fd6217b067001721646cd0e292fac "query": "",
-=======
-					"name": "pages/address/list/list",
-					"pathName": "pages/address/list/list",
-					"query": "",
->>>>>>> c5f4625595428358acbdb8bb938e107db2916918
-					"scene": null
-				},
-				{
-					"id": -1,
-<<<<<<< HEAD
-					<<
-					<< << < HEAD "name": "pages/address/list/list",
-					"pathName": "pages/address/list/list",
-=======
-					"name": "pages/order/detail/detail",
-					"pathName": "pages/order/detail/detail",
->>>>>>> c5f4625595428358acbdb8bb938e107db2916918
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/order/list/list",
-					"pathName": "pages/order/list/list",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-<<<<<<< HEAD
-					"name": "pages/address/list/list",
-					"pathName": "pages/address/list/list",
-					===
-					=== = <<
-					<< << < HEAD "name": "pages/home/detail/detail",
-					"pathName": "pages/home/detail/detail",
-					===
-					=== =
-					"name": "pages/address/add/add",
-					"pathName": "pages/address/add/add",
-					"query": "",
-					>>>
-					>>> > 312 ba214247c2fe2bcaba3f1de491935cd2bdb32 ===
-					=== =
-					"name": "pages/order/orderConfirm/index",
-					"pathName": "pages/order/orderConfirm/index",
-<<<<<<< HEAD
-					>>>
-					>>> > b14d198fb75f789c9f1a46caa92e2ed5c74cb30f <<
-					<< << < HEAD >>>
-					>>> > 864 d1c8a5d3fd6217b067001721646cd0e292fac ===
-					=== = >>>
-					>>> > 53 dd58129df25641625ae197be8c3a1003b5ef26 >>>
-					>>> > b4a64fca91c4693163d678ee26472930f6aed6a3 "scene": null
-=======
->>>>>>> b14d198fb75f789c9f1a46caa92e2ed5c74cb30f
-<<<<<<< HEAD
->>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
-=======
->>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
->>>>>>> b4a64fca91c4693163d678ee26472930f6aed6a3
-=======
 					"name": "2",
 					"pathName": "pages/order/list/list",
->>>>>>> 486b91a74385b2eeea94fcb4a2bd7cdbd6a281d8
-=======
-					"name": "pages/address/add/add",
-					"pathName": "pages/address/add/add",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/pay/pay/pay",
-					"pathName": "pages/pay/pay/pay",
-					"query": "",
->>>>>>> c5f4625595428358acbdb8bb938e107db2916918
+					"name": "pages/home/homePage/index",
+					"pathName": "pages/home/homePage/index",
 					"scene": null
->>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
+				},
+				{
+					"id": -1,
+					"name": "pages/home/homePage/index",
+					"pathName": "pages/home/homePage/index",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/home/homePage/index",
+					"pathName": "pages/home/homePage/index",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/orderConfirm/index",
+					"pathName": "pages/order/orderConfirm/index",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/orderConfirm/index",
+					"pathName": "pages/order/orderConfirm/index",
+					"scene": null
 				}
 			]
 		}
