@@ -9,10 +9,19 @@
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
+		"coverView": true,
 		"autoAudits": false,
-		"coverView": true
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -41,18 +50,17 @@
 =======
 >>>>>>> 312ba214247c2fe2bcaba3f1de491935cd2bdb32
 >>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
-	"projectname": "miniproject",
->>>>>>> 53dd58129df25641625ae197be8c3a1003b5ef26
 =======
-	"libVersion": "2.9.2",
-	"appid": "wx4e69c623dedf7a3b",
-	"projectname": "sanzu",
->>>>>>> 486b91a74385b2eeea94fcb4a2bd7cdbd6a281d8
+	"libVersion": "2.9.1",
+	"appid": "wxb7e7ea2bf6054faa",
+>>>>>>> c5f4625595428358acbdb8bb938e107db2916918
+	"projectname": "miniproject",
+	"cloudfunctionTemplateRoot": "",
 	"debugOptions": {
 >>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,
+	"scripts": {},
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -69,7 +77,6 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"gamePlugin": {
@@ -80,33 +87,43 @@
 			"current": -1,
 			"list": [{
 					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/home/homePage",
 					"pathName": "pages/home/homePage",
+=======
+					"name": "pages/logs/logs",
+					"pathName": "pages/logs/logs",
+>>>>>>> c5f4625595428358acbdb8bb938e107db2916918
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
 >>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
 					"name": "pages/logs/logs",
 					"pathName": "pages/logs/logs",
+=======
+					"name": "pages/my/index",
+					"pathName": "pages/my/index",
+>>>>>>> c5f4625595428358acbdb8bb938e107db2916918
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/index/index",
-					"pathName": "pages/index/index",
+					"name": "pages/home/homePage/index",
+					"pathName": "pages/home/homePage/index",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "pages/index/index",
-					"pathName": "pages/index/index",
+					"name": "pages/order/orderConfirm/index",
+					"pathName": "pages/order/orderConfirm/index",
 					"query": "",
 					"scene": null
 				},
@@ -119,6 +136,7 @@
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					<<
 					<< << < HEAD <<
 					<< << < HEAD "name": "pages/category/category",
@@ -140,25 +158,36 @@
 					>>>
 					>>> > b14d198fb75f789c9f1a46caa92e2ed5c74cb30f >>>
 					>>> > 864 d1c8a5d3fd6217b067001721646cd0e292fac "query": "",
+=======
+					"name": "pages/address/list/list",
+					"pathName": "pages/address/list/list",
+					"query": "",
+>>>>>>> c5f4625595428358acbdb8bb938e107db2916918
 					"scene": null
 				},
 				{
 					"id": -1,
+<<<<<<< HEAD
 					<<
 					<< << < HEAD "name": "pages/address/list/list",
 					"pathName": "pages/address/list/list",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
+=======
 					"name": "pages/order/detail/detail",
 					"pathName": "pages/order/detail/detail",
+>>>>>>> c5f4625595428358acbdb8bb938e107db2916918
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
+					"name": "pages/order/list/list",
+					"pathName": "pages/order/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+<<<<<<< HEAD
 					"name": "pages/address/list/list",
 					"pathName": "pages/address/list/list",
 					===
@@ -194,6 +223,18 @@
 					"name": "2",
 					"pathName": "pages/order/list/list",
 >>>>>>> 486b91a74385b2eeea94fcb4a2bd7cdbd6a281d8
+=======
+					"name": "pages/address/add/add",
+					"pathName": "pages/address/add/add",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pay/pay/pay",
+					"pathName": "pages/pay/pay/pay",
+					"query": "",
+>>>>>>> c5f4625595428358acbdb8bb938e107db2916918
 					"scene": null
 >>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
 				}

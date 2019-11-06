@@ -4,12 +4,13 @@ placeholder  占位符
 clearable  是否启用清除控件
 clearable  是否启用清除控件
 -->
-<view>
+
+<view class="all">
     <view class="hander">
         <view class="hanone">
             <van-icon name="arrow-left" />
         </view>
-        <view>
+        <view class="handertwo">
             <text>新建地址</text>
         </view>
     </view>
@@ -25,11 +26,11 @@ clearable  是否启用清除控件
             bind:click-icon="onClickIcon" />
     </van-cell-group>
     <view class="trueOrfales"> <text>是否设为默认地址</text>
-        <van-switch class="Swith" checked="{{ checked }}" size="20px" />
+        <van-switch class="Swith"  checked="{{ checked }}" size="20px" />
     </view>
-    <view class="Preservation">
-        <van-button type="warning" size="large">保存</van-button>
+    <view class="Preservation mar">
+        <van-button type="warning" color="#c03131" size="large">保存</van-button>
         <view class="Preservation"></view>
         <van-button type="default" size="large" custom-style="margin=17px;">删除</van-button>
-    </view >
+    </view>
 </view>

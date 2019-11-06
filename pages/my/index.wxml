@@ -1,13 +1,56 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<!--pages/demo/demo.wxml-->
+<view class="myCenter">
+  <view class="header">
+    <view class="head">
+      <image src="https://mall.s.maizuo.com/e915e2c990c30f8efa9e30bc75da41ee.jpg" alt=""></image>
+      <text>立即登录</text>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto"></text>
+  <ul class="wealthBox">
+    <li class="wealth">
+      <text class="num">0.00<text class="numText">元</text> </text>
+      <text class="text">余额</text>
+    </li>
+    <li class="wealth">
+      <text class="num">0<text class="numText">张</text> </text>
+      <text class="text">苏打券</text>
+    </li>
+    <li class="wealth">
+      <text class="num">0<text class="numText">张</text> </text>
+      <text class="text">现金券</text>
+    </li>
+  </ul>
+  <view style="margin:10px 0;" class="orderInfo">
+    <van-cell-group class="user-group">
+      <van-cell title="我的订单" is-link class="myOrder" />
+    </van-cell-group>
+    <view class="user-links">
+      <view class="phone">
+        <van-icon name="pending-payment" class="iconStyle" />
+        <view>待付款</view>
+      </view>
+      <view class="phone">
+        <van-icon name="flower-o" class="iconStyle" />
+        <view>待分享</view>
+      </view>
+      <view class="phone">
+        <van-icon name="tosend" class="iconStyle" />
+        <view>待发货</view>
+      </view>
+      <view class="phone">
+        <van-icon name="logistics" class="iconStyle" />
+        <view>已发货</view>
+      </view>
+      <view class="phone">
+        <van-icon name="after-sale" class="iconStyle" />
+        <view>退出售后</view>
+      </view>
+    </view>
   </view>
+  <van-cell-group>
+    <van-cell icon="friends-o" title="我的体验" is-link class="myExperience" />
+    <van-cell icon="cash-on-deliver" title="企业服利" is-link class="welfare" />
+    <van-cell icon="service-o" title="客服" is-link class="service" />
+    <van-cell icon="setting-o" title="设置" is-link />
+  </van-cell-group>
 </view>
