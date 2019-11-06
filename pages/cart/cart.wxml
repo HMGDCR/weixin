@@ -34,17 +34,10 @@
         <view class="goods-price">
           <text class="price">￥44.9</text>
           <text class="old-price">￥55.9</text>
-          
-
-
           <text class="count">X 1</text>
         </view>
       </view>
     </view>
-
-
-
-    
     <view class="flx-cent">
       <view class="section section_gap">
         <radio-group class="radio-group" bindchange="radioChange">
@@ -64,7 +57,10 @@
         </view>
       </view>
     </view>
+
   </view>
+
+  
   <!-- 底部结算 -->
   <van-submit-bar price="{{ 3050 }}" button-text="提交订单" bind:submit="onClickButton" tip="{{ true }}">
     <van-tag type="primary">

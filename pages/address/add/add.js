@@ -5,10 +5,17 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // checked: false,
+    checked: false,
     required:false
   },
-  
+
+// method:{
+
+// },
+onChange({ detail }) {
+  // 需要手动对 checked 状态进行更新
+  this.setData({ checked: detail });
+},
 
   /**
    * 生命周期函数--监听页面加载
