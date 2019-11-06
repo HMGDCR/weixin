@@ -24,8 +24,8 @@
         </view>
       </view>
       <view slot="footer" class="margin-top">
-        <text class="flr">已取消</text>
-        <view class="buttosize">重新购买</view>
+        <text class="flr">已取消 </text>
+        <view class="buttosize">重新购买 </view>
       </view>
     </view>
   </view>
