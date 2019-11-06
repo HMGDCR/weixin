@@ -26,7 +26,27 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    this.getList()
+  },
 
+  // 获取列表
+  getList(){
+    let url = "https://huruqing.cn:3009/product/list";
+    let data = {pageNum:2}
+    wx.request({
+      url,
+      data,
+      method:"post",
+      success(res) {
+        console.log( res )
+      },
+      fail(err) {
+        console.log( err )
+      },
+      complete() {
+        console.log( "完成" )
+      }
+    })
   },
 
   /**
