@@ -21,56 +21,15 @@
 		}
 	},
 	"compileType": "miniprogram",
-<<<<<<< HEAD
 	"libVersion": "2.9.2",
-	"appid": "wx4e69c623dedf7a3b",
-	"projectname": "sanzu",
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
-	"libVersion": "2.9.1",
-	<<
-	<< << < HEAD <<
-	<< << < HEAD "appid": "wx57ce4777ef580cda",
-	===
-	=== =
-	"appid": "wxd2abc0c0fe268724",
-	"projectname": "miniFresh",
-	>>>
-	>>> > b4a64fca91c4693163d678ee26472930f6aed6a3 ===
-	=== = <<
-	<< << < HEAD "appid": "wx8ac3b054084a8fac",
-	===
-	=== =
-	"appid": "wx713318c47d89e43d",
-<<<<<<< HEAD
-	>>>
-	>>> > 312 ba214247c2fe2bcaba3f1de491935cd2bdb32 >>>
-	>>> > 864 d1c8a5d3fd6217b067001721646cd0e292fac "projectname": "miniproject",
-	>>>
-	>>> > 53 dd58129df25641625ae197be8c3a1003b5ef26 "debugOptions": {
-=======
->>>>>>> 312ba214247c2fe2bcaba3f1de491935cd2bdb32
->>>>>>> 864d1c8a5d3fd6217b067001721646cd0e292fac
-=======
-	"libVersion": "2.9.1",
-<<<<<<< HEAD
-	"appid": "wx57ce4777ef580cda",
-	"projectname": "miniFresh",
-=======
-	"appid": "wxb7e7ea2bf6054faa",
->>>>>>> c5f4625595428358acbdb8bb938e107db2916918
-	"projectname": "miniproject",
->>>>>>> 2299f51bc104d5601a6ad32e6cbbd889404b2c3a
->>>>>>> 681e61aea5bbd4af6c425d1a4f1bb47bfdcadced
-	"cloudfunctionTemplateRoot": "",
+	"appid": "wx1a4e63fdc266444b",
+	"projectname": "miniprogram-2",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"scripts": {},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -85,6 +44,7 @@
 			"list": []
 		},
 		"game": {
+			"currentL": -1,
 			"list": []
 		},
 		"gamePlugin": {
@@ -92,61 +52,21 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": -1,
 			"list": [
 				{
 					"id": -1,
-					"name": "1",
+					"name": "pages/home/homePage/index",
+					"pathName": "pages/home/homePage/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/category/category",
 					"pathName": "pages/category/category",
 					"query": "",
 					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "2",
-					"pathName": "pages/order/list/list",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/home/homePage/index",
-					"pathName": "pages/home/homePage/index",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/home/homePage/index",
-					"pathName": "pages/home/homePage/index",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/home/homePage/index",
-					"pathName": "pages/home/homePage/index",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/order/orderConfirm/index",
-					"pathName": "pages/order/orderConfirm/index",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "pages/order/orderConfirm/index",
-					"pathName": "pages/order/orderConfirm/index",
-					"scene": null
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-				},
-				{
-					"id": -1,
-					"name": "pages/order/list/list",
-					"pathName": "pages/address/list/list",
-					"scene": null
-<<<<<<< HEAD
 				},
 				{
 					"id": -1,
@@ -156,16 +76,25 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "pages/category/category",
-					"pathName": "pages/category/category",
+					"id": 3,
+					"name": "pages/home/detail/detail",
+					"pathName": "pages/home/detail/detail",
+					"query": "productId=98744072",
 					"scene": null
-=======
-=======
->>>>>>> be0d9fc5980f9df797de4737afe2f3648c0caf86
->>>>>>> 2299f51bc104d5601a6ad32e6cbbd889404b2c3a
->>>>>>> 681e61aea5bbd4af6c425d1a4f1bb47bfdcadced
->>>>>>> d11b727c845b7a097b92c04f170898b3048abd78
+				},
+				{
+					"id": -1,
+					"name": "pages/my/index",
+					"pathName": "pages/my/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/cart/cart",
+					"pathName": "pages/cart/cart",
+					"query": "productId=98744072",
+					"scene": null
 				}
 			]
 		}

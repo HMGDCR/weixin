@@ -1,0 +1,14 @@
+// 格式化金额
+function toFixed(num) {
+  num = (num / 100);
+  return num.toFixed(2);
+}
+
+function formatDate(tiem) {
+  // 详细的逻辑
+}
+
+module.exports = {
+  toFixed: toFixed,
+  formatDate: formatDate
+}

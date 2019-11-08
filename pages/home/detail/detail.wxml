@@ -1,12 +1,13 @@
-
+<!-- //导入格式化 -->
+<wxs src="../../../wxs/index.wxs" module="F"/>
 <view>
     <view class="big-body">
         <!-- 轮播图 -->
         <swiper  class="swipers" indicator-dots="true">
-            <swiper-item>
-                <image src="https://mall.s.maizuo.com/5f727ae93559d9c445e944a58211b538.png?x-oss-process=image/resize,w_563" ></image>
+            <swiper-item wx:for="{{detailData.banners}}" wx:key="{{index}}">
+                <image src="{{item}}" ></image>
             </swiper-item>
-            <swiper-item>
+            <!-- <swiper-item>
                 <image src="https://mall.s.maizuo.com/71e5b918b306be65390ff0c3fb8155f2.jpg?x-oss-process=image/resize,w_563" ></image>
             </swiper-item>
             <swiper-item>
@@ -14,23 +15,23 @@
             </swiper-item>
             <swiper-item>
                 <image src="https://mall.s.maizuo.com/ebbcef931beb1d633533835ef7f51639.jpg?x-oss-process=image/resize,w_563" ></image>
-            </swiper-item>
+            </swiper-item> -->
         </swiper>
-        <view class="return" bindtap="goBack"><van-icon name="arrow-left" /></view>   
+        <!-- <view class="return" bindtap="goBack"><van-icon name="arrow-left" /></view>    -->
         <!-- 商品介绍 -->
         <view class="item-info">
             <view class="item-info-container">
                 <view class="item-info-master">
                 <text class="label f12" style="background-color: rgb(120, 160, 209);">直降</text>
                 <text class="label f12" style="background-color: rgb(145, 188, 111);">包邮</text>
-                极鲜网 冻巴沙鱼柳 450-500g*2袋 分活动是佛活动啊过分分活动是佛光复读机啊过分活动啊过分分活动啊过分分活动啊过分分活动啊过分分活动啊过分分
+               {{detailData.masterName}}
                 </view>
-                <view class="item-info-slave color-gray">果园生态种植 皮薄香甜爽口 富含天然维C</view>
+                <view class="item-info-slave color-gray"> {{detailData.slaveName}}</view>
                 <view class="item-info-price flex jc-sb ai-fe mt-10">
                 <text>
                     <text class="price mr-5" style="font-size:15px">￥</text>
-                    <text class="f20 price mr-5">44.9</text>
-                    <text class="f12 old-price mr-5 color-gray" style="text-decoration:line-through;">￥56.9</text>
+                    <text class="f20 price mr-5">  {{F.toFixed(detailData.minPrice)}}</text>
+                    <text class="f12 old-price mr-5 color-gray" style="text-decoration:line-through;">￥{{F.toFixed(detailData.maxPrice)}}</text>
                 </text>
                 <text class="f12 color-gray">3932人购买</text>
                 </view>
@@ -38,11 +39,12 @@
         </view>
         <view class="mt-10 f12 fcc color-gray" style="background-color:white;height:46px;">—— 商品详情 ——</view>
         <view class="bg-fff">
-            <cover-image class="images2" src="https://mall.s.maizuo.com/92d393d03848b8ea112d609e0ae11a00.png"></cover-image>
-            <cover-image class="images2" src="https://mall.s.maizuo.com/30266ad53356660a815d8b799eac35bf.jpg"></cover-image>
+        <cover-image class="images2" wx:for="{{detailData.descPics}}" src="{{item}} " wx:key="index"></cover-image>
+            <!-- <cover-image class="images2" src="https://mall.s.maizuo.com/92d393d03848b8ea112d609e0ae11a00.png"></cover-image> -->
+            <!-- <cover-image class="images2" src="https://mall.s.maizuo.com/30266ad53356660a815d8b799eac35bf.jpg"></cover-image>
             <cover-image class="images2" src="https://mall.s.maizuo.com/e828214d7b75e7db532bf1cf3cf13f2f.jpg"></cover-image>
             <cover-image class="images2" src="https://mall.s.maizuo.com/f2919825a151d5631530d47b26fc27cd.jpg"></cover-image>
-            <cover-image class="images2" src="https://mall.s.maizuo.com/c9a60deecd83d63a7ff49512f92ff57f.jpg"></cover-image>
+            <cover-image class="images2" src="https://mall.s.maizuo.com/c9a60deecd83d63a7ff49512f92ff57f.jpg"></cover-image> -->
             <view class="mt-10 f12 fcc color-gray" style="background-color:white;height:46px;">—— 预定流程及须知 ——</view>
             <cover-image class="images2" src="https://file.sdyxmall.com/h5/v1/public/app/img/group5.b0b24d0.png"></cover-image>
         </view>
@@ -67,8 +69,8 @@
         <!-- 底部购物车 -->
         <cover-view style="height:40px">
         <van-goods-action class="bottom-nav">
-        <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
-        <van-goods-action-button open-type size="100px" text="加入购物车" color="#fcc" type="warning" info="5"/>
+        <van-goods-action-icon icon="cart-o" text="购物车" info="{{productNum}}" bindtap="gotoCart"/>
+        <van-goods-action-button open-type size="100px" text="加入购物车" color="#fcc" type="warning" info="5" bindtap="cartAdd"/>
         <van-goods-action-button text="立即购买" info="5"/>
         </van-goods-action>
         </cover-view>

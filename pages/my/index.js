@@ -7,13 +7,53 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    isLogin:false,//登录的转态
+    nickName:"",
+    headImg:"" //头像
   },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
       url: '../logs/logs'
     })
+  },
+  // 登录的方法
+  login(event){
+    console.log("event:",event)
+    let rawData=JSON.parse(event.detail.rawData)
+    // console.log("event.rawData.nickName", rawData)
+   
+    this.setData({
+      nickName: rawData.nickName ,
+      headImg: event.detail.userInfo.avatarUrl
+    })
+    
+    let { encryptedData,iv, userInfo} = event.detail
+    wx.login({
+      success:(res=>{       
+        let data = {
+          code: res.code,
+          encryptedData, 
+          iv,
+           userInfo
+        }
+        let url = app.$url +"/user/login"
+        app.$get(url,data).then(res=>{
+          console.log("登录成功",res)
+          //保存登录状态
+          this.setData({
+            isLogin:true
+          })
+          let { token } = res.user          
+          wx.setStorageSync('token', token);
+        }).catch(err=>{
+          console.log("登录失败",err)
+        })
+        
+      })
+    })
+
   },
   onLoad: function () {
     if (app.globalData.userInfo) {

@@ -12,28 +12,36 @@
 
     <!-- 分类选择内容 -->
     <view class="shop-content">
+    <!-- 侧边栏 -->
         <view class="shop-select">
 
             <van-sidebar active="{{ active }}" bind:change="onChange">
-                <van-sidebar-item title="百果园" />
-                <van-sidebar-item title="时令鲜果" />
-                <van-sidebar-item title="地方特产" />
+                <van-sidebar-item title="{{item.name}}" wx:for="{{items}}" wx:key="index"/>
+                
             </van-sidebar>
         </view>
+        <!-- 列表内容 -->
         <view class="shop-main">
             <van-grid column-num="2" border="{{ false }}" class="shop-list">
-                <van-grid-item use-slot >
-                    <view class="shop-items">
+               
+                <van-grid-item use-slot wx:for="{{itemList}}" wx:for="{{itemList}}" wx:key="index">
+                 <navigator url="/pages/order/detail/detail" open-type="navigateTo">
+                  
+                      <view class="shop-items">
 
                         <image style="height:240rpx;width:240rpx;background: #f4f4f4"
-                            src="https://mall.s.maizuo.com/3484d2c4a5b30f1e7c6282096a2816b9.png?x-oss-process=image/resize,w_248" />
+                            src="{{item.imgUrl}}"/>
 
 
-                        <text class="shop-title">A级-阳光冬枣（中）约2.6-3斤</text>
-                        <text class="shop-price">￥99</text>
-                    </view>
+                        <text class="shop-title">{{item.masterName}}</text>
+                        <text class="shop-price">￥{{item.minPrice/100}}</text>
+                    </view>                 
+                    </navigator>
                 </van-grid-item>
- <van-grid-item use-slot >
+                
+                  <van-loading wx:if="{{islodingshow}}" type="spinner" class="loadingUpdata"></van-loading>
+
+ <!-- <van-grid-item use-slot >
                     <view class="shop-items">
 
                         <image style="height:240rpx;width:240rpx;background: #f4f4f4"
@@ -54,7 +62,7 @@
                         <text class="shop-title">A级-阳光冬枣（中）约2.6-3斤</text>
                         <text class="shop-price">￥99</text>
                     </view>
-                </van-grid-item>
+                </van-grid-item> -->
             </van-grid>
 
         </view>

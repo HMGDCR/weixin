@@ -12,6 +12,11 @@
   justify-content: center;
    transform:scale(0.7);
 }
+.radio::after{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
 .free-freight{
   margin-left: 30rpx
 }
@@ -99,8 +104,11 @@
   .no-fare {
     position: absolute;
     right: 30rpx;
-    color: #797d82;
+    top: 18rpx;
+    color: #fff;
     font-size: 24rpx;
+    background: #b91717;
+
   }
   .van-card__content {
     width: 400rpx;
@@ -168,4 +176,18 @@
     right: 228rpx;
     margin-top: 27rpx;
   }
-  
+  /* 空白 */
+  .kongbai{
+    height: 100rpx;
+    width: 100%;
+    background: #fff;
+  }
+
+  /* 进不器 */
+  .van-steppe{
+    position: relative;
+    top: 15rpx;
+    left: 10rpx;
+
+  }
+

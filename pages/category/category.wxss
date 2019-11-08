@@ -116,3 +116,9 @@
     top: 0;
     width: 100%
 }
+/*----------- 上来加载 -------------*/
+.loadingUpdata{
+  position: fixed;
+  bottom: 100rpx;
+  
+}

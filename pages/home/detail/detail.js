@@ -1,3 +1,5 @@
+const app = getApp()
+
 // pages/home/detail/detail.js
 Page({
 
@@ -11,6 +13,9 @@ Page({
     show: false,
     show2: false,
     show3: false,
+    detailData:{},//详情的数据
+    productId:"" ,//这是商品详情的Id
+    productNum:0,//购物车的数量
   },
   goBack:function(){
     this.$router.go(-1)
@@ -31,7 +36,58 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //获取商品列表传来的商品id
+    let productId = options.productId;
+    this.setData({
+      productId: productId
+    })
+    console.log("传值Id", productId)   
+    this.getDetail(productId)
+  },
+  /////////////////////////获取商品详情数据方法
+  getDetail(productId){
+ 
+    let url = app.$url + "/product/detail"
+    let data = {
+      productId
+    }
+    app.$get(url,data).then(res=>{
+      console.log("商品的详情数据",res)
 
+   
+      this.setData({
+        detailData: res.result,
+        productNum:res.result.cartNum
+      })
+   
+    }).catch(err=>{
+      console.log("获取失败：",err)
+    })
+  },
+  /////////////////////////添加到购物车
+  cartAdd(){
+    //注意我们这里使用的商品Id为商品列表穿过来的，而不是商品详情的Id
+    let url = app.$url +'/cart/add'
+    let data = {
+      productId: this.data.productId,
+      buyNum:1
+    }
+    app.$get(url,data).then(res=>{
+     //当添加购物车成功后，需要给购物车中商品的数量重新赋值
+      this.setData({
+        productNum: res.result.buyNum
+      })
+    }).catch(err=>{
+      console.log("添加失败：",err)
+    })
+  },
+
+  /////////////////////////跳转到购物车
+  gotoCart(){
+    let url ="/pages/cart/cart"
+    wx.switchTab({
+      url:url
+    })
   },
 
   /**

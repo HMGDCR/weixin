@@ -1,3 +1,6 @@
+ <!-- 导入格式化 -->
+ <wxs src="../../../wxs/index.wxs" module="F"/>
+ 
  <view class="mainContent">
     <!-- 轮播图 -->
     <view class="container">
@@ -5,9 +8,9 @@
             <view class="page-section page-section-spacing swiper">
                 <swiper class="swiperContent" indicator-dots="{{indicatorDots}}"
                     autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-                    <block wx:for="{{background}}" wx:key="*this">
+                    <block wx:for="{{Banners}}" wx:key="index">
                         <swiper-item>
-                            <image src="http://huruqing.cn/static/img/fresh/other/banner1.jpeg"></image>
+                            <image src="{{item}}"></image>
                         </swiper-item>
                     </block>
                 </swiper>
@@ -17,7 +20,10 @@
     <!-- 宫格 -->
     <view class="gridContent">
         <van-grid column-num="4" class="grid" border="{{ false }}">
-            <van-grid-item icon="http://huruqing.cn/static/img/fresh/other/r2.png" text="文字" wx:for="{{ 8 }}" wx:key="*this" />
+      
+                <van-grid-item icon="{{item.iconUrl}}" text="{{item.name}}" wx:for="{{Category}}"       wx:key="{{index}}" bindtap="gotoCategory" data-index="{{item.categoryId}}"/>
+      
+    
         </van-grid>
     </view>
       
@@ -43,7 +49,24 @@
             </view>
         </van-sticky>
         <view class="goods">
-            <view class="listItem">
+            <view class="listItem" wx:for="{{List}}" wx:key="*this">
+            <navigator url="/pages/home/detail/detail?title=navigator&productId={{item.productId}}" hover-class="navigator-hover">
+            
+
+    <image src="{{item.imgUrl}}"></image>
+                <view class="textDescribe">
+                    <text class="goodsName">{{item.masterName}}</text>
+                    <text class="goodDetails">{{item.slaveName}}</text>
+                    <view class="price">
+                        <text class="ren">￥</text><text class="priceNum">{{F.toFixed(item.minPrice)}}</text>
+                    </view>
+                </view>
+
+
+            </navigator>
+              
+            </view>
+            <!-- <view class="listItem">
                 <image src="https://mall.s.maizuo.com/1f8134cb7efe19ea0cfc86a1c84ff4c2.png?x-oss-process=image/resize,w_248"></image>
                 <view class="textDescribe">
                     <text class="goodsName">【广东】 港式网红鱼皮</text>
@@ -52,17 +75,7 @@
                         <text class="ren">￥</text><text class="priceNum">38.9</text>
                     </view>
                 </view>
-            </view>
-            <view class="listItem">
-                <image src="https://mall.s.maizuo.com/1f8134cb7efe19ea0cfc86a1c84ff4c2.png?x-oss-process=image/resize,w_248"></image>
-                <view class="textDescribe">
-                    <text class="goodsName">【广东】 港式网红鱼皮</text>
-                    <text class="goodDetails">选取新鲜巴沙鱼皮 酥脆香浓口感 富含胶原蛋白</text>
-                    <view class="price">
-                        <text class="ren">￥</text><text class="priceNum">38.9</text>
-                    </view>
-                </view>
-            </view>
+            </view> -->
         </view>
     </view>
 </view>

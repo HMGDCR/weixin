@@ -2,8 +2,9 @@
 <view class="myCenter">
   <view class="header">
     <view class="head">
-      <image src="https://mall.s.maizuo.com/e915e2c990c30f8efa9e30bc75da41ee.jpg" alt=""></image>
-      <text>立即登录</text>
+      <image src="{{headImg?headImg:'https://mall.s.maizuo.com/e915e2c990c30f8efa9e30bc75da41ee.jpg'}}" alt=""></image>
+    
+      <button open-type="getUserInfo" bindgetuserinfo='login' class="login">{{isLogin?nickName:"立即登录"}}</button>
     </view>
   </view>
   <ul class="wealthBox">

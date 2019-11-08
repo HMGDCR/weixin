@@ -3,6 +3,19 @@
   height: 100vh;
   background: #f4f4f4;
 }
+.login{ 
+  background-color: #00000000;
+   border: none;
+   outline: none;
+   position: relative;
+   left: -187rpx;
+   color:#797d82;
+   font-size: 32rpx;
+   
+}
+.login::after{
+  border: none;
+}
 
 
 .header {
@@ -24,6 +37,7 @@
   width: 130rpx;
   height: 130rpx;
   margin-right: 40rpx;
+  border-radius: 50%;
 }
 
 

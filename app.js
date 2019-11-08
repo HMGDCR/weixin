@@ -1,6 +1,17 @@
 //app.js
+
+//全局导入utils的request.js的文件，这是我们已经封装好的
+import $https from './utils/request.js'
+
+
 App({
   onLaunch: function () {
+    //请求的封装
+    this.$url = 'https://huruqing.cn:3009';
+    this.$get = $https.get;
+    this.$post = $https.post;
+    this.$categoryId="1111111111" //分类商品的Id
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

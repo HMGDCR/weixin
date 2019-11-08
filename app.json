@@ -1,10 +1,11 @@
 {
   "pages": [
+    "pages/home/homePage/index",
     "pages/my/index",
     "pages/logs/logs",
-    "pages/home/homePage/index",
+    
     "pages/home/detail/detail",
-    "pages/cart/cart",
+    "pages/cart/cart",    
     "pages/category/category",
     "pages/address/add/add",
     "pages/address/list/list",
@@ -14,10 +15,11 @@
     "pages/pay/payWay/payWay",
     "pages/pay/pay/pay",
     "pages/demo/demo"
+   
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#000",
+    "navigationBarBackgroundColor": "#C03131",
     "navigationBarTitleText": "每日优鲜",
     "navigationBarTextStyle": "white"
   },
@@ -56,6 +58,7 @@
         "pagePath": "pages/demo/demo",
         "text": "demo"
       }
+     
     ]
   },
   "usingComponents": {
