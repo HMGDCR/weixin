@@ -6,31 +6,31 @@ clearable  是否启用清除控件
 -->
 
 <view class="all">
-    <view class="hander">
+    <!-- <view class="hander">
         <view class="hanone">
             <van-icon name="arrow-left" />
         </view>
         <view class="handertwo">
             <text>新建地址</text>
         </view>
-    </view>
+    </view> -->
     <van-cell-group>
-        <van-field value="{{ username }}" label="姓名" placeholder="请输入用户名" clearable bind:click-icon="onClickIcon" />
-        <van-field value="{{ username }}" label="电话" placeholder="请输入手机号" clearable right-icon-class="custom-icon"
-            bind:click-icon="onClickIcon" />
-        <van-field value="{{ username }}" label="地区" placeholder="省 / 市 / 区" clearable right-icon-class="custom-icon"
-            bind:click-icon="onClickIcon" />
-        <van-field value="{{ username }}" label="详细地址" placeholder="门牌号街道" clearable right-icon-class="custom-icon"
-            bind:click-icon="onClickIcon" />
-        <van-field value="{{ username }}" label="邮编地址" placeholder="邮政编号" clearable right-icon-class="custom-icon"
-            bind:click-icon="onClickIcon" />
+        <van-field value="{{username }}" label="姓名" placeholder="请输入用户名" clearable bind:click-icon="onClickIcon" bind:change="changeName" required="true" error-message="{{nameErr?'请输入名字':''}}"/>
+        <van-field value="{{ phone }}" label="电话" placeholder="请输入手机号" clearable right-icon-class="custom-icon" bind:change="changePhone"
+            bind:click-icon="onClickIcon" required="true" error-message="{{phoneErr?'请输入电话号码':''}}"/>
+        <van-field value="{{ area }}" label="地区" placeholder="省 / 市 / 区" clearable right-icon-class="custom-icon" bind:change="changeArea"
+            bind:click-icon="onClickIcon" required="true" error-message="{{areaErr?'请输入区域':''}}"/>
+        <van-field value="{{ address }}" label="详细地址" placeholder="门牌号街道" clearable right-icon-class="custom-icon" bind:change="changeAddress"
+            bind:click-icon="onClickIcon" required="true"  error-message="{{detailErr?'请输入详细地址':''}}"/>
+        <van-field value="{{ zip }}" label="邮编地址" placeholder="邮政编号" clearable right-icon-class="custom-icon" bind:change="changeZip"
+            bind:click-icon="onClickIcon" required="true" error-message="{{zipErr?'请输入邮编地址':''}}"/>
     </van-cell-group>
     <view class="trueOrfales"> <text>是否设为默认地址</text>
-        <van-switch class="Swith" bind:change="onChange"  checked="{{ checked }}" size="20px" />
+        <van-switch class="Swith" bind:change="onChange"  checked="{{ checked }}" size="20px" active-color="#C03131"/>
     </view>
-    <view class="Preservation mar">
-        <van-button type="warning" color="#c03131" size="large">保存</van-button>
+    <view class="Preservation mar" bindtap="{{isAdd?'addAddress':'editAddress'}}">
+        <van-button  type="warning" color="#c03131" disabled="{{isAble}}" size="large">{{isAdd?'添加':'保存'}}</van-button>
         <view class="Preservation"></view>
-        <van-button type="default" size="large" custom-style="margin=17px;">删除</van-button>
+        <!-- <van-button type="default" size="large" custom-style="margin=17px;">删除</van-button> -->
     </view>
 </view>

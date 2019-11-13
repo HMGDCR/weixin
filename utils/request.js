@@ -1,12 +1,15 @@
+
+import { baseUrl} from './config.js'
+
 function serve(url, data, method){
+
   method=method||'get'
 
+  url = baseUrl+url
   let token = wx.getStorageSync("token");
   console.log("获取的token",token)
 
-  return new Promise((resolve,rejuct)=>{
-    
-
+  return new Promise((resolve,rejuct)=>{  
     
       //发起数据请求
       wx.request({
@@ -22,14 +25,13 @@ function serve(url, data, method){
 
         //成功的时候
         success(res) {
-          // wx.hideLoading()
+     
           if (res.data.code===666) {
             resolve(res.data)
 
-
           } else if (res.data.code === 603){
             //清楚token
-            wx.removeStorageSync("token");
+            // wx.removeStorageSync("token");
             wx.showModal({
               title: "提示",
               content: "登录已过期，是否重新登录",
@@ -46,10 +48,8 @@ function serve(url, data, method){
             });
           }
 
-
-
           else {
-            // wx.hideLoading()
+            
             rejuct(res.data.msg)
           }
         },
@@ -57,7 +57,8 @@ function serve(url, data, method){
         fail(err) {
           // wx.hideLoading(),
             rejuct("获取数据失败", err)
-        }
+        },
+        
       })
     
     

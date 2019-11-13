@@ -3,7 +3,7 @@
     <view class="move-up">
       <!-- 中部地址栏 -->
       <view class="view-main" >
-        <view class="address-list-item">
+        <!-- <view class="address-list-item">
           <view class="info">
             <view class="addressee">陈媛媛 1888 1888 1888</view>
             <view class="address-detail">广东省深圳市龙岗区龙岗区龙岗区龙岗街道左创智慧创新大夏</view>
@@ -31,28 +31,31 @@
               </view>
             </view>
           </view>
-        </view>
-        <view class="address-list-item">
-          <view class="info">
-            <view class="addressee">申凯枫 155 5555 5555</view>
-            <view class="address-detail">广西省南宁市青秀区民族大道山水美地B座03栋901</view>
+        </view> -->
+
+
+         <van-radio-group value="{{ radio }}">
+        <view class="address-list-item" wx:for="{{list}}">
+          <view class="info" bindtap="goOrderConfirm" data-item="{{item}}">
+            <view class="addressee">{{item.name}} {{item.tel}}</view>
+            <view class="address-detail">{{item.county}}{{item.addressDetail}}</view>
           </view>
           <view class="operation">
             <view class="isDefault" >
-              <van-radio-group  bind:change="onChange" value="{{ radio }}">
-                <van-radio name="2"  checked-color="#C03131">
+             
+                <van-radio name="{{index}}"  checked-color="#C03131" data-index="{{index}}" bindtap="onChange" data-item="{{item}}" data-addressId="{{item.addressId}}">
                   <text class="defaultAddress">默认地址</text>
                 </van-radio>
-              </van-radio-group>
+           
             </view>
             <view class="delEdit">
-              <view class="delete" >
+              <view class="delete" bindtap="delAddress" data-index="{{index}}" data-addressId="{{item.addressId}}"> 
                 <image class="deleteImg"
                   src="../../../img/del.png"
                 />
                 <text class="deleteText">删除</text>
               </view>
-              <view class="edit" >
+              <view class="edit" bindtap="editAddress" data-addressId="{{item.addressId}}" data-isDefault="{{item.isDefault}}">
                 <image class="editImg"
                   src="../../../img/edit.png"
                 />
@@ -61,10 +64,14 @@
             </view>
           </view>
         </view>
+          </van-radio-group>
       </view>
+      
     </view>
+    
+     
     <!-- 底部新建栏 -->
-    <view class="address-list-button" >
+    <view class="address-list-button" bindtap="addAddress">
       <view class="buttonDiv">
         <image  class="buttonImg"
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAJtJREFUWAntlUsKwCAMRLXtxut4gZ69F/A8rvpRiMjgRkMhiwkIjvgZXwLxzxfOQGxaD3fOrgxteC2RK8bq4UxJ5UVNRPV6d5hGOhh1SiIkggRQs0ZIBAmgZo0gkdZ9pYvihr+1dG0zqWlEVn8uJOVnq/eYIUIjmEISIREkgJo1QiJIALWZGjnQ2azeQ5g9Mtyv7r7DWxcWzaTmBRgwIx+QoVW4AAAAAElFTkSuQmCC"
@@ -72,4 +79,5 @@
         <text class="buttonText">新建地址</text>
       </view>
     </view>
+
   </view>

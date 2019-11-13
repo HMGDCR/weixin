@@ -3,9 +3,8 @@
     "pages/home/homePage/index",
     "pages/my/index",
     "pages/logs/logs",
-    
     "pages/home/detail/detail",
-    "pages/cart/cart",    
+    "pages/cart/cart",
     "pages/category/category",
     "pages/address/add/add",
     "pages/address/list/list",
@@ -14,8 +13,8 @@
     "pages/order/detail/detail",
     "pages/pay/payWay/payWay",
     "pages/pay/pay/pay",
-    "pages/demo/demo"
-   
+    "pages/demo/demo",
+    "pages/order/coupon/coupon"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,12 +23,12 @@
     "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json",
-  "tabBar":{
-    "selectedColor":"#c03131",
-    "color":"#797d82",
-    "list":[
+  "tabBar": {
+    "selectedColor": "#c03131",
+    "color": "#797d82",
+    "list": [
       {
-        "iconPath":"./img/home.png",
+        "iconPath": "./img/home.png",
         "selectedIconPath": "./img/homing.png",
         "pagePath": "pages/home/homePage/index",
         "text": "首页"
@@ -58,7 +57,6 @@
         "pagePath": "pages/demo/demo",
         "text": "demo"
       }
-     
     ]
   },
   "usingComponents": {

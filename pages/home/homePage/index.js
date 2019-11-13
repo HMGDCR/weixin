@@ -48,10 +48,18 @@ Page({
     this.getBanners();
     this.getCategory();
     this.getList();
+
+
+    wx.showToast({
+      title: '加载中...',
+      mask: true,
+      icon: 'loading'
+    })
+
   },
   //定义一个获取首页轮播图数据的方法
   getBanners(){   
-    let url = app.$url +'/product/getBanners'
+    let url ='/product/getBanners'
     //我们定义好的app对象就相当于this
     app.$get(url).then(res=>{     
       //通过this.setData
@@ -64,7 +72,7 @@ Page({
   },
   //定义一个获取商品分类的方法
   getCategory(){
-    let url = app.$url +'/category/all'
+    let url ='/category/all'
     app.$get(url).then(res=>{      
       this.setData({
         Category:res.list
@@ -79,11 +87,17 @@ Page({
     console.log("此时的页面：",pageNow)
     this.data.isLoding=false
 
-    let url = app.$url +'/product/list?pageNum='+pageNow;
+    let url ='/product/list?pageNum='+pageNow;
    
     app.$get(url).then(res=>{
-      console.log("列表",res)
+      console.log("列表",res);
       
+
+      // complete(){
+           wx.hideToast()
+        // }
+
+
       this.setData({
         List: this.data.List.concat(res.list),
         pageLength:res.list
@@ -93,6 +107,7 @@ Page({
       //若想查看data里面的数据可以通过以下方法
       // console.log("11", this.data.List)
     }).catch(err=>{
+      wx.hideToast()
       console.log("失败",err)
     })
   },

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "coupon": "../../components/coupon/coupon"
+  },
+  "navigationBarTitleText": "确认订单"
 }

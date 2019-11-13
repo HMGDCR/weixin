@@ -47,37 +47,47 @@ Page({
   /////////////////////////获取商品详情数据方法
   getDetail(productId){
  
-    let url = app.$url + "/product/detail"
+
+    wx.showToast({
+      title: '加载中...',
+      mask: true,
+      icon: 'loading'
+    })
+
+    let url ="/product/detail"
     let data = {
       productId
     }
     app.$get(url,data).then(res=>{
       console.log("商品的详情数据",res)
 
-   
+      wx.hideToast()
       this.setData({
         detailData: res.result,
         productNum:res.result.cartNum
       })
    
     }).catch(err=>{
+      wx.hideToast()
       console.log("获取失败：",err)
     })
   },
   /////////////////////////添加到购物车
   cartAdd(){
     //注意我们这里使用的商品Id为商品列表穿过来的，而不是商品详情的Id
-    let url = app.$url +'/cart/add'
+    let url ='/cart/add'
     let data = {
       productId: this.data.productId,
       buyNum:1
     }
-    app.$get(url,data).then(res=>{
+    app.$get(url,data).then(res=>{  
      //当添加购物车成功后，需要给购物车中商品的数量重新赋值
+     //注意，我们每点击一次就累加一次，累加的基础是从购物车获取到的数据
       this.setData({
-        productNum: res.result.buyNum
-      })
-    }).catch(err=>{
+        productNum: this.data.productNum+1
+      })     
+    
+    }).catch(err=>{  
       console.log("添加失败：",err)
     })
   },
@@ -89,6 +99,23 @@ Page({
       url:url
     })
   },
+//////////////////////////调用购物车的数据
+getCartData(){
+  let url = "/cart/all"
+  app.$get(url).then(res=>{
+    console.log("购物车的数据：",res)
+    //遍历数组，拿到商品总数量
+    let num = 0
+    res.list.forEach(item=>{
+      num+=item.buyNum
+    })
+    this.setData({
+      productNum:num
+    })
+  }).catch(err=>{
+    console.log("获取购物车数据失败",err)
+  })
+},
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -101,7 +128,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    this.getCartData()
   },
 
   /**

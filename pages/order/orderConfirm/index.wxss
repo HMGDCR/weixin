@@ -1,1 +1,221 @@
-.topNave{width:100%}.topNave .van-sticky-wrap{width:100%}.confirmOrderPage{background:#f4f4f4;min-height:100vh;margin-bottom:100rpx}.topNavagator{display:flex;justify-content:space-between;align-items:center;height:88rpx;background:#ffffff}.topNavagator .arrowLeft{font-size:40rpx;padding-left:20rpx}.topNavagator .confirmOrder{font-size:34rpx;padding-right:50rpx}.topNavagator .colcorLine{width:100%}.address{display:flex;align-items:center;height:152rpx;padding:34rpx 56rpx 34rpx 0;background:#ffffff}.address van-icon{font-size:60rpx;padding-left:36rpx;padding-right:20rpx;color:#bdc1c5}.address .addresInfo{display:flex;flex-direction:column;justify-content:space-between}.address .addresInfo .personInfo text{font-size:30rpx;color:#797d82}.address .addresInfo .personInfo .name{color:#191a1b}.address .addresInfo .location{font-size:26rpx;color:#797d82}.orderInfo{background:#ffffff;margin-top:20rpx}.orderInfo .express{height:68rpx;padding:30rpx 20rpx 0 20rpx;font-size:26rpx}.orderInfo .goodsInfo{height:240rpx;margin-left:20rpx;display:flex;align-items:center;border-bottom:2rpx solid #ededed;box-sizing:border-box}.orderInfo .goodsInfo cover-image{width:170rpx;height:170rpx;background:#f4f4f4}.orderInfo .goodsInfo .goodsDescribe{height:180rpx;padding-right:30rpx;display:flex;flex-direction:column;justify-content:space-between;padding-left:20rpx}.orderInfo .goodsInfo .goodsDescribe .name{font-size:30rpx;color:#191a1b;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:17em}.orderInfo .goodsInfo .goodsDescribe .priceInfo{display:flex;justify-content:space-between}.orderInfo .goodsInfo .goodsDescribe .priceInfo .ren{font-size:20rpx;color:#c03131}.orderInfo .goodsInfo .goodsDescribe .priceInfo .price{font-size:30rpx;color:#c03131}.orderInfo .goodsInfo .goodsDescribe .priceInfo .buyNum{font-size:30rpx;color:#bdc0c5}.orderInfo .gooodsPriceInfo{box-sizing:border-box;height:98rpx;padding:24rpx 30rpx;line-height:64rpx;display:flex;justify-content:space-between}.orderInfo .gooodsPriceInfo .goodsPrice{font-size:26rpx;color:#797d82}.orderInfo .gooodsPriceInfo .ren{font-size:20rpx;color:#c03131}.orderInfo .gooodsPriceInfo .price{font-size:30rpx;color:#c03131}.coupon{margin-top:20rpx}.coupon .van-icon{font-size:50rpx}.coupon .coupon-o .van-cell__title,.coupon .coupon-o .van-cell__value{font-size:30rpx;color:#191a1b}.coupon .coupon-o .van-icon{color:#EAA68D}.coupon .coupon-o .van-icon-arrow{font-size:30rpx;color:#BDCADD}.coupon .gift-card-o .van-cell__title,.coupon .gift-card-o .van-cell__value{font-size:30rpx;color:#191a1b}.coupon .gift-card-o .van-icon{color:#c03131}.coupon .gift-card-o .van-icon-arrow{font-size:30rpx;color:#BDCADD}.coupon .peer-pay .van-cell__title,.coupon .peer-pay .van-cell__value{font-size:30rpx;color:#191a1b}.coupon .peer-pay .van-icon{color:#c03131}.coupon .peer-pay .van-icon-arrow{font-size:30rpx;color:#BDCADD}.submitButton .van-button{background:#c03131}.submitButton .van-submit-bar__price{color:#c03131}
+.topNave {
+  width: 100%;
+}
+
+.topNave .van-sticky-wrap {
+  width: 100%;
+}
+
+.confirmOrderPage {
+  background: #f4f4f4;
+  min-height: 100vh;
+  margin-bottom: 100rpx;
+}
+
+.topNavagator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88rpx;
+  background: #fff;
+}
+
+.topNavagator .arrowLeft {
+  font-size: 40rpx;
+  padding-left: 20rpx;
+}
+
+.topNavagator .confirmOrder {
+  font-size: 34rpx;
+  padding-right: 50rpx;
+}
+
+.topNavagator .colcorLine {
+  width: 100%;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  height: 152rpx;
+  padding: 34rpx 56rpx 34rpx 0;
+  background: #fff;
+}
+
+.address van-icon {
+  font-size: 60rpx;
+  padding-left: 36rpx;
+  padding-right: 20rpx;
+  color: #bdc1c5;
+}
+
+.address .addresInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.address .addresInfo .personInfo text {
+  font-size: 30rpx;
+  color: #797d82;
+}
+
+.address .addresInfo .personInfo .name {
+  color: #191a1b;
+}
+
+.address .addresInfo .location {
+  font-size: 26rpx;
+  color: #797d82;
+}
+
+.orderInfo {
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+.orderInfo .express {
+  height: 68rpx;
+  padding: 30rpx 20rpx 0 20rpx;
+  font-size: 26rpx;
+}
+
+.orderInfo .goodsInfo {
+  height: 240rpx;
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #ededed;
+  box-sizing: border-box;
+}
+
+.orderInfo .goodsInfo cover-image {
+  width: 170rpx;
+  height: 170rpx;
+  background: #f4f4f4;
+}
+
+.orderInfo .goodsInfo .goodsDescribe {
+  height: 180rpx;
+  padding-right: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.orderInfo .goodsInfo .goodsDescribe .name {
+  font-size: 30rpx;
+  color: #191a1b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 17em;
+}
+
+.orderInfo .goodsInfo .goodsDescribe .priceInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderInfo .goodsInfo .goodsDescribe .priceInfo .ren {
+  font-size: 20rpx;
+  color: #c03131;
+}
+
+.orderInfo .goodsInfo .goodsDescribe .priceInfo .price {
+  font-size: 30rpx;
+  color: #c03131;
+}
+
+.orderInfo .goodsInfo .goodsDescribe .priceInfo .buyNum {
+  font-size: 30rpx;
+  color: #bdc0c5;
+}
+
+.orderInfo .gooodsPriceInfo {
+  box-sizing: border-box;
+  height: 98rpx;
+  padding: 24rpx 30rpx;
+  line-height: 64rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.orderInfo .gooodsPriceInfo .goodsPrice {
+  font-size: 26rpx;
+  color: #797d82;
+}
+
+.orderInfo .gooodsPriceInfo .ren {
+  font-size: 20rpx;
+  color: #c03131;
+}
+
+.orderInfo .gooodsPriceInfo .price {
+  font-size: 30rpx;
+  color: #c03131;
+}
+
+.coupon {
+  margin-top: 20rpx;
+}
+
+.coupon .van-icon {
+  font-size: 50rpx;
+}
+
+.coupon .coupon-o .van-cell__title, .coupon .coupon-o .van-cell__value {
+  font-size: 30rpx;
+  color: #191a1b;
+}
+
+.coupon .coupon-o .van-icon {
+  color: #eaa68d;
+}
+
+.coupon .coupon-o .van-icon-arrow {
+  font-size: 30rpx;
+  color: #bdcadd;
+}
+
+.coupon .gift-card-o .van-cell__title, .coupon .gift-card-o .van-cell__value {
+  font-size: 30rpx;
+  color: #191a1b;
+}
+
+.coupon .gift-card-o .van-icon {
+  color: #c03131;
+}
+
+.coupon .gift-card-o .van-icon-arrow {
+  font-size: 30rpx;
+  color: #bdcadd;
+}
+
+.coupon .peer-pay .van-cell__title, .coupon .peer-pay .van-cell__value {
+  font-size: 30rpx;
+  color: #191a1b;
+}
+
+.coupon .peer-pay .van-icon {
+  color: #c03131;
+}
+
+.coupon .peer-pay .van-icon-arrow {
+  font-size: 30rpx;
+  color: #bdcadd;
+}
+
+.submitButton .van-button {
+  background: #c03131;
+}
+
+.submitButton .van-submit-bar__price {
+  color: #c03131;
+}
+.van-button--large{
+  width: 240rpx !important;
+}

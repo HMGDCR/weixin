@@ -69,8 +69,8 @@
         <!-- 底部购物车 -->
         <cover-view style="height:40px">
         <van-goods-action class="bottom-nav">
-        <van-goods-action-icon icon="cart-o" text="购物车" info="{{productNum}}" bindtap="gotoCart"/>
-        <van-goods-action-button open-type size="100px" text="加入购物车" color="#fcc" type="warning" info="5" bindtap="cartAdd"/>
+        <van-goods-action-icon icon="cart-o" text="购物车" info="{{productNum?productNum:''}}" bindtap="gotoCart"/>
+        <van-goods-action-button open-type size="100px" text="加入购物车" color="#C03131" type="warning" info="5" bindtap="cartAdd"/>
         <van-goods-action-button text="立即购买" info="5"/>
         </van-goods-action>
         </cover-view>

@@ -1,0 +1,111 @@
+<view class="header">
+    <!-- 兑换 -->
+    <van-cell-group>
+        <van-field value="{{ sms }}" center clearable placeholder="请输入短信验证码" border="{{ false }}" use-button-slot>
+            <van-button slot="button" color="#F78592" size="small" type="primary">兑换</van-button>
+        </van-field>
+    </van-cell-group>
+</view>
+<!-- 可用优惠卷 -->
+<view class="nav">
+    <van-tabs active="{{ active }}" bind:change="onChange">
+        <van-tab title="可用优惠卷（2）">
+            <view class="usingBox">
+                <view class="using">
+                    <view class="top">
+                        <view class="left">
+                            <view class="coupon_price">
+                                1.5
+                                <text class="unit">元</text>
+                            </view>
+                            <view class="coupon_limit">无使用门槛\n最多优惠12元</view>
+                        </view>
+                        <view class="right">
+                            <view class="coupon_name">优惠券名称</view>
+                            <view class="coupon_time">有效期：2017.03.10 - 2017.12.30</view>
+                        </view>
+                        <view class="radio">
+                        <van-radio-group value="{{ radio }}" bind:change="onChange">
+                            <van-radio name="1" checked-color="#EE0A24"></van-radio>
+                        </van-radio-group>
+                    </view>
+                    </view>
+                    <view class="footer">
+                        <text>描述信息</text>
+                    </view>
+                </view>
+            </view>
+            <view class="usingBox">
+                <view class="using">
+                    <view class="top">
+                        <view class="left">
+                            <view class="coupon_price">
+                                8.8
+                                <text class="unit">折</text>
+                            </view>
+                            <view class="coupon_limit">无使用门槛\n最多优惠12元</view>
+                        </view>
+                        <view class="right">
+                            <view class="coupon_name">优惠券名称</view>
+                            <view class="coupon_time">有效期：2017.03.10 - 2017.12.30</view>
+                        </view>
+                         <view class="radio">
+                        <van-radio-group value="{{ radio }}" bind:change="onChange">
+                            <van-radio name="2" checked-color="#EE0A24"></van-radio>
+                        </van-radio-group>
+                    </view>
+                    </view>
+                    <view class="footer">
+                        <text>描述信息</text>
+                    </view>
+                </view>
+            </view>
+        </van-tab>
+        <!-- 不可用优惠卷 -->
+        <van-tab title="不可用优惠卷（2）">
+            <view class="usingBox_2">
+                <view class="using">
+                    <view class="top">
+                        <view class="left">
+                            <view class="coupon_price">
+                                1.5
+                                <text class="unit">元</text>
+                            </view>
+                            <view class="coupon_limit">无使用门槛\n最多优惠12元</view>
+                        </view>
+                        <view class="right">
+                            <view class="coupon_name">优惠券名称</view>
+                            <view class="coupon_time">有效期：2017.03.10 - 2017.12.30</view>
+                        </view>
+                    </view>
+                    <view class="footer">
+                        <text>描述信息</text>
+                    </view>
+                </view>
+            </view>
+            <view class="usingBox_2">
+                <view class="using">
+                    <view class="top">
+                        <view class="left">
+                            <view class="coupon_price">
+                                8.8
+                                <text class="unit">折</text>
+                            </view>
+                            <view class="coupon_limit">无使用门槛\n最多优惠12元</view>
+                        </view>
+                        <view class="right">
+                            <view class="coupon_name">优惠券名称</view>
+                            <view class="coupon_time">有效期：2017.03.10 - 2017.12.30</view>
+                        </view>
+                    </view>
+                    <view class="footer">
+                        <text>描述信息</text>
+                    </view>
+                </view>
+            </view>
+        </van-tab>
+    </van-tabs>
+</view>
+<view class="bottom">
+    <text class="notUsing">不使用优惠</text>
+</view>

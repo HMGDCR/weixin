@@ -1,7 +1,9 @@
-<view class="order-list">
-  <view class="navagator">
+ <wxs src="../../../wxs/index.wxs" module="F"/>
 
-    <!-- 标签栏 -->
+<view class="order-list">
+
+<!-- 标签栏 -->
+  <view class="navagator">    
     <view style="color:#797d82;">
       <van-tabs>
         <van-tab title="全部"></van-tab>
@@ -14,19 +16,28 @@
   </view>
   <!-- 商品详情 -->
   <view class="goodsDetail">
-    <view class="goodsBox" style="margin-top:20rpx;">
-      <van-card class="padd-15" num="1" price="42.5" title="海边理发店" thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
-        style="font-size: 30rpx;background-color: #fff;" />
+    <view class="goodsBox" style="margin-top:20rpx;" wx:for="{{list}}" wx:key="{{index}}">
+
+      <van-card class="padd-15" num="{{items.buyNum}}" price="42.5" title="{{items.masterName}}"  wx:for="{{item.carts}}" 
+      wx:for-item="items"
+      thumb="{{items.imgUrl}}"
+        style="font-size: 30rpx;background-color: #fff;" 
+        
+        />
+
       <view slot="footer" style="height:80rpx" class="border-line">
         <view style="height:26rpx;font-size:26rpx;padding-right:20rpx">
-          共1件商品 <text style="padding-left:20rpx"></text> 实付￥
-          <text style="color:#C03131;font-size:30rpx">700</text>
+          共{{item.num}}件商品 <text style="padding-left:20rpx"></text> 实付￥
+          <text style="color:#C03131;font-size:30rpx">{{F.toFixed(item.total_fee)}}</text>
         </view>
       </view>
       <view slot="footer" class="margin-top">
         <text class="flr">已取消 </text>
+        <!-- <view  class="buttosize">清除</view> -->
         <view class="buttosize">重新购买 </view>
       </view>
     </view>
   </view>
+
+
 </view>

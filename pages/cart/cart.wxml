@@ -4,22 +4,28 @@
 <view class="cart-befor">
 
   <!-- 编辑 -->
-  <view class="free-store">
+  
+    <van-sticky offset-top="{{ 0 }}">
+   <view class="free-store">
 
     <button class="no-fare" bindtap="goEdit">{{isEdit?'完成':'编辑'}}</button>
+   
   </view>
+ </van-sticky>
+
+
+ 
   <!-- 购物车列表 -->
   <view>
 
     <view class="flx-cent" wx:for="{{cartList}}" wx:key="{{index}}">
+
       <view class="section section_gap">
         <checkbox-group class="radio-group">
           <checkbox class="radio" value="{{item.name}}" checked="{{item.checked}}" color="red" bindtap="changeChecked" data-index="{{index}}">
-
             <text>{{item.value}}</text>
           </checkbox>
         </checkbox-group>
-
       </view>
 
       <view class="cart-goods">
@@ -29,27 +35,24 @@
         <view class="goods-msg">{{item.masterName}}</view>
 
         <view class="goods-price">
-
           <text class="price">￥{{F.toFixed(item.price)}}</text>
           <text class="old-price">￥55.9</text>
           <!-- 进步器 -->
-
-          <van-stepper wx:if='{{isEdit}}' value="{{ item.buyNum }}" bind:change="onChange" class="van-steppe" data-index="{{index}}" />
-
+          <van-stepper wx:if='{{isEdit}}' value="{{ item.buyNum }}" bind:change="onChange" class="van-steppe" data-index="{{index}}" disabled="{{item.isStepper}}"/>   
           <text class="count" wx:else>x {{item.buyNum}}</text>
-
         </view>
       </view>
     </view>
+    
 
   </view>
 <!-- 采用三元表达式添加方法的时候，花括号里面的方法需要引号 -->
   <view class="kongbai"></view>
-  <van-submit-bar price="{{ totalMoney*100}}" button-text="{{isEdit?'删除':'提交订单'}}" bind:submit="{{isEdit?'onDelet':'onClickButton'}}" tip="{{ true }}" button-class="submit-Order">
+  <van-submit-bar disabled="{{isButton}}" price="{{totalMoney}}" button-text="{{isEdit?'删除':'提交订单'}}" bind:submit="{{isEdit?'onDelet':'onClickButton'}}" tip="{{ true }}" button-class="submit-Order">
     <van-tag type="primary">
       <view class="section section_gap">
         <checkbox-group class="radio-group">
-          <checkbox class="radio" size="10px" value="{{item.name}}" checked="{{isSelectAll}}" color="red" bindtap="selectAll">
+          <checkbox class="radio" size="10px" value="{{item.name}}" checked="{{isSelectAll}}" color="#b91717" bindtap="selectAll" disabled="{{isAbleSelete}}">
             <text>{{item.value}}</text>
           </checkbox>
         </checkbox-group>

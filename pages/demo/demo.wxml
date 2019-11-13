@@ -1,13 +1,10 @@
+<view>
 
-<!-- <button open-type="getUserInfo" bindgetuserinfo='login' >登录</button> -->
+<van-tabs   bind:click="fn" animated>
+  <van-tab title="标签 1" name="1">内容1</van-tab>
+  <van-tab title="标签 2" name="2">内容2</van-tab>
+  <van-tab title="标签 3" name="3">内容3</van-tab>
+  <van-tab title="标签 4" name="4">内容4</van-tab>
+</van-tabs>
 
-
-  
-  <!-- <input placeholder='用户名' 
-  bindinput="adInputChange" value='{{username}}' data-name="username"></input>
-    <input placeholder='密码' 
-  bindinput="adInputChange" value='{{userpawss}}' data-name="userpawss"></input>
-  <button bindtap="submit">提交</button> -->
-
-
-  <van-stepper value="{{ 1 }}" bind:change="onChange" />
+</view>

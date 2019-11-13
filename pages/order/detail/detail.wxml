@@ -1,42 +1,54 @@
 <!--pages/order/detail/detail.wxml-->
+
+ <wxs src="../../../wxs/index.wxs" module="F"/>
+
+
 <view>
     <view class="order-detail">     
       <!-- 主体 -->
       <view style>
         <view class="view">
-          <text style="color:#fff">订单已取消</text>
+          <text style="color:#fff">{{isPay?'亲！！!您已经成功购买':'亲！！！您已经取消订单'}}</text>
           <image
             style="height:134rpx;width:198rpx"
             src="https://file.sdyxmall.com/h5/v1/public/app/img/cancel.ff91da7.png"
             alt
           />
         </view>
-        <view class="user-address" style="background:white">
+        <view class="user-address" style="background:white" bindtap="goAddress">
           <view class="user-address-right" style="line-height:44rpx">
             <image
               style="height:40rpx;width:40rpx;"
               src="../../../img/address.png"
               alt
             />
-            <text style="margin-right:20rpx;font-size:26rpx;padding-left:24rpx;">李瑶</text>
-            <text style="font-size:13px;color:#797d82;">13800320000</text>
+            <text style="margin-right:20rpx;font-size:26rpx;padding-left:24rpx;">{{addressInfo.name}}</text>
+            <text style="font-size:13px;color:#797d82;">{{addressInfo.tel}}</text>
           </view>
           <view
             class="user-button-address"
             style="padding-left:64rpx;color:#797d82;"
-          >广东省深圳市福田区华强北振兴路205栋商务中心大厦三楼(茂业百货,国美)三有国际5楼501室</view>
+          >{{addressInfo.county}}{{addressInfo.addressDetail}}</view>
         </view>
-        <view style="padding:30rpx;background:white" class="orderGoods">
+
+
+        <view style="padding:30rpx;background:white" class="orderGoods"   wx:for="{{carts}}">
+
+
           <van-card
-            num="1"
-            price="42.5"
-            desc="描述信息"
-            title="海边理发店"
-            thumb="https://img.yzcdn.cn/vant/t-thirt.jpg"
+        
+            num="{{item.buyNum}}"
+            price="{{F.toFixed(item.price)}}"
+            desc="{{item.slaveName}}"
+            title="{{item.masterName}}"
+            thumb="{{item.imgUrl}}"
             style="font-size: 30rpx"
           >
             <van-viewider />
           </van-card>
+
+
+
         </view>
         <view
           style="display:flex;flex-direction: column;padding: 24rpx 30rpx;height:196rpx;background:white"
@@ -44,18 +56,18 @@
         >
           <view style="line-height:48rpx;flex-grow:1;display:flex;justify-content:space-between">
             <text style="color: #797d82;font-size: 26rpx;">商品金额</text>
-            <text style="color: #c03131;font-size: 26rpx;">￥99.00</text>
+            <text style="color: #c03131;font-size: 26rpx;">￥{{F.toFixed(totalPrice)}}</text>
           </view>
           <view style="line-height:48rpx;flex-grow: 1;display:flex;justify-content:space-between">
             <text style="color: #797d82;font-size: 26rpx;">运费</text>
-            <text style="color: #c03131;font-size: 26rpx;">￥0.00</text>
+            <text style="color: #c03131;font-size: 26rpx;">￥{{F.toFixed(expressFee)}}</text>
           </view>
           <view style="line-height:48rpx;flex-grow: 1;display:flex;justify-content:space-between">
             <text>实付</text>
-            <text style="color: #c03131;">￥99.00</text>
+            <text style="color: #c03131;">￥{{isPay?F.toFixed(total_fee):0}}</text>
           </view>
         </view>
-        <view style="padding: 24rpx 30rpx ;color: #797d82;font-size: 22rpx;background:white">
+        <view style="padding: 24rpx 30rpx ;color: #797d82;font-size: 22rpx;background:white;" class="dinddanhao">
           <view style="display:flex;justify-content:space-between">
             <view style="line-height:44rpx">
               <text style="margin-right:20rpx">订单编号</text>
@@ -68,7 +80,7 @@
 
           <view>
             <text style="margin-right:20rpx">下单时间</text>
-            <text>2019-10-21 14:06:54</text>
+            <text>{{tiem}}</text>
           </view>
         </view>
       </view>
@@ -78,7 +90,7 @@
         <view style="padding-left:24rpx">
           <van-icon style="font-size:50rpx" name="service" />
         </view>
-        <view style="padding-right:30rpx">
+        <view style="padding-right:30rpx" bindtap="goOrderComfirm">
           <van-button style="font-size:30rpx" type="default" size="small">重新购买</van-button>
         </view>
       </view>

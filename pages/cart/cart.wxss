@@ -28,7 +28,8 @@
   background:#fff;
   display:flex;
   line-height:44px;
-  border-bottom:1px solid #F4F4F4
+  border-bottom:1px solid #F4F4F4;
+  width: 100vw;
 }
 .button-style{
   display: flex;
@@ -104,12 +105,15 @@
   .no-fare {
     position: absolute;
     right: 30rpx;
-    top: 18rpx;
-    color: #fff;
-    font-size: 24rpx;
-    background: #b91717;
+    top: 8rpx;
+    color: #2e2f30;    
+    background: #fff;
+    font-size: 32rpx;
 
   }
+   .no-fare::after{
+    border: none;
+   }
   .van-card__content {
     width: 400rpx;
   }
@@ -180,7 +184,7 @@
   .kongbai{
     height: 100rpx;
     width: 100%;
-    background: #fff;
+    background: #f4f4f4;
   }
 
   /* 进不器 */
@@ -189,5 +193,12 @@
     top: 15rpx;
     left: 10rpx;
 
+  }
+  .van-button--danger{
+    border: none !important;
+    background: #b91717 !important;
+  }
+  .van-submit-bar__price {
+    color: #b91717 !important;
   }
 

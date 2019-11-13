@@ -23,9 +23,17 @@ Page({
   },
 ////////////获取分类的数据
 getCategory(){
-  let url = app.$url +"/category/all";
+
+  wx.showToast({
+    title: '加载中...',
+    mask: true,
+    icon: 'loading'
+  })
+
+  let url ="/category/all";
   app.$get(url).then(res=>{
- 
+    wx.hideToast()
+
     let cateId = res.list[0].categoryId
     this.getList(cateId)
     // this.getList()
@@ -33,6 +41,7 @@ getCategory(){
       items:res.list
     })
   }).catch(err=>{
+    wx.hideToast()
     console.log("err",err)
   })
 },
@@ -44,7 +53,7 @@ getCategory(){
       islodingshow:true
     })
 
-    var url = app.$url +'/product/list';
+    var url ='/product/list';
       var data = {
         categoryId,
         pageNum          

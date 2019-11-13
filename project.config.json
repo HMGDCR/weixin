@@ -95,6 +95,61 @@
 					"pathName": "pages/cart/cart",
 					"query": "productId=98744072",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/list/list",
+					"pathName": "pages/order/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/orderConfirm/index",
+					"pathName": "pages/order/orderConfirm/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/address/list/list",
+					"pathName": "pages/address/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/address/add/add",
+					"pathName": "pages/address/add/add",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pay/pay/pay",
+					"pathName": "pages/pay/pay/pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/detail/detail",
+					"pathName": "pages/order/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/list/list",
+					"pathName": "pages/order/list/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/coupon/coupon",
+					"pathName": "pages/order/coupon/coupon",
+					"scene": null
 				}
 			]
 		}

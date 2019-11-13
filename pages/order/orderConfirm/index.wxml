@@ -1,59 +1,74 @@
+<!-- //导入格式化 -->
+<wxs src="../../../wxs/index.wxs" module="F"/>
+
+
 <view class="confirmOrderPage">
-    <van-sticky class="topNave">
-        <view class="topNavagator">
-            <van-icon name="arrow-left" class="arrowLeft" />
+    <!-- <van-sticky class="topNave"> -->
+        <!-- <view class="topNavagator"> -->
+            <!-- <van-icon name="arrow-left" class="arrowLeft" /> -->
+            <!-- <text class="arrowLeft" ></text>
             <text class="confirmOrder">确认订单</text>
-            <text></text>
-        </view>
-    </van-sticky>
-    <cover-image class="colcorLine" src="../../../img/colored-line.png"></cover-image>
-    <view class="address">
+            <text></text> -->
+        <!-- </view> -->
+    <!-- </van-sticky> -->
+    <!-- <cover-image class="colcorLine" src="../../../img/colored-line.png"></cover-image> -->
+
+
+    <!-- 详细地址 -->
+    <view class="address" bindtap="goAddressList">
         <van-icon name="location-o"/>
         <view class="addresInfo">
             <view class="personInfo">
-                <text class="name">姓名</text>
-                <text>18000000000</text>
+                <text class="name">{{isShow?address.name:'请填写名字您的信息'}}</text>
+                <text>{{isShow?address.tel:""}}</text>
             </view>
-            <text class="location">广东省深圳市龙岗区龙岗区龙岗区左创智慧</text>
+            <text class="location">{{isShow?address.county:""}}{{isShow?address.addressDetail:""}}</text>
         </view>
     </view>
+<!-- 订单详情 -->
     <view class="orderInfo">
         <view class="express"> 商家承担运费 </view>
-        <view class="goodsInfo">
-            <cover-image src="https://mall.s.maizuo.com/f0a3a97f7bf9bf7b0012c3f42d8086db.png"></cover-image>
+
+
+        <view class="goodsInfo" wx:for="{{preOrder}}">      
+    
+            <cover-image src="{{item.imgUrl}}"></cover-image>
             <view class="goodsDescribe">
                 <view class="name">
-                    【四川】爱媛38号果冻橙 12枚（果径70-80mm/枚）
+                    {{item.masterName}}
                 </view>
                 <view class="priceInfo">
                     <view>
-                        <text class="ren">￥</text><text class="price">88.8</text>
+                        <text class="ren">￥</text><text class="price">{{F.toFixed(item.price)}}</text>
                     </view>
-                    <text class="buyNum">x1</text>
+                    <text class="buyNum">x{{item.buyNum}}</text>
                 </view>
             </view>
         </view>
+
+
         <view class="gooodsPriceInfo">
             <text class="goodsPrice">商品金额</text>
             <view class="totalPrice">
-                <text class="ren">￥</text><text class="price">88.8</text>
+                <text class="ren">￥</text><text class="price">{{F.toFixed(totalMoney)}}</text>
             </view>
         </view>
         <view class="gooodsPriceInfo">
             <text class="goodsPrice">运费</text>
             <view class="totalPrice">
-                <text class="ren">￥</text><text class="price">0</text>
+                <text class="ren">￥</text><text class="price">{{F.toFixed(expressFee)}}</text>
             </view>
         </view>
     </view>
-    <view class="coupon">
+    <view class="coupon">  
+      <van-cell bindtap="goCoupon" title="优惠券" icon="coupon-o" is-link value="{{couponShow}}" class="coupon-o" />  
         <van-cell title="现金券" icon="coupon-o" is-link value="0张券可用" class="coupon-o" />
         <van-cell title="苏打券" icon="gift-card-o" is-link value="0张券可用" class="gift-card-o" />
         <van-cell title="发票" icon="peer-pay" is-link value="不开发票" class="peer-pay"/>
     </view>
     <view class="submitButton">
-        <van-submit-bar price="{{ 3050 }}" button-text="提交订单"
-        bind:submit="onClickButton"
+        <van-submit-bar price="{{ total_fee }}" button-text="提交订单"
+        bind:submit="prePay"
         custom-class="van-submit-bar" safe-area-inset-bottom="{{ false }}" />
     </view>
       

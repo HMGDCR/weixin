@@ -1,15 +1,20 @@
+ <wxs src="../../../wxs/index.wxs" module="F"/>
+
 <!--pages/pay/pay/pay.wxml-->
 <view class="payment">
         <!-- 导航栏 -->
-        <view class="navPay" >
-            <van-nav-bar title="微信支付" left-arrow >
+        <!-- <view class="navPay" >
+            <van-nav-bar title="微信扫描二维码支付" left-arrow >
                 <van-icon name="wap-home-o" slot="left" style="color:black;" bindtap="goHome" />
             </van-nav-bar>
-        </view>
+        </view> -->
         <!-- 商品信息 -->
         <view class="ctxPay">
-            <view class="titlePay">苏打优选商品</view>
-            <view class="pricePay">￥0</view>
+         <!-- <view class="titlePay">苏打优选商品</view> -->
+            <image src="{{qrcode}}"></image>
+           <view>请在{{count}}秒内支付</view>
+            <view class="pricePay">￥{{ F.toFixed(total_fee)}}</view>
+            
         </view>
         <!-- 收款方 -->
         <view class="context">
@@ -18,8 +23,8 @@
                 <view class="rightPay">苏打优选</view>
             </view>
         </view>
-        <!-- 支付按钮 -->
+        <!-- 支付按钮
         <view class="btnPay">
             <van-button type="primary" size="large" bindtap="goHome">立即支付</van-button>
-        </view>
+        </view> -->
     </view>

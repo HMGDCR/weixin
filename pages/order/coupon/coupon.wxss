@@ -1,0 +1,202 @@
+.header .van-field .van-button {
+  width: 20%;
+  height: 10%
+}
+
+.nav .usingBox {
+  width: 100%;
+  height: 262rpx;
+  margin-top: 30rpx
+}
+
+.nav .usingBox .using {
+  width: 90%;
+  height: 260rpx;
+  margin: 0 auto;
+  box-shadow: 0rpx 0rpx 10rpx 0rpx rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.nav .usingBox .using .top {
+  display: flex;
+  height: 240rpx;
+  align-content: center;
+  position: relative
+}
+
+.nav .usingBox .using .top .left {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.nav .usingBox .using .top .left .coupon_price {
+  font-size: 40rpx;
+  color: #EE0A24
+}
+
+.nav .usingBox .using .top .left .coupon_price .unit {
+  font-size: 32rpx
+}
+
+.nav .usingBox .using .top .left .coupon_limit {
+  width: 125rpx;
+  font-size: 20rpx;
+  line-height: 35rpx;
+  color: #969799
+}
+
+.nav .usingBox .using .top .right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+
+.nav .usingBox .using .top .right .coupon_name {
+  font-weight: 600;
+  padding-top: 20rpx;
+  box-sizing: border-box
+}
+
+.nav .usingBox .using .top .right .coupon_time {
+  font-size: 24rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+  color: #969799;
+  background: #fff;
+}
+
+.nav .usingBox .using .top .radio {
+  position: absolute;
+  top: 96rpx;
+  right: 41rpx
+}
+
+.nav .usingBox .using .footer {
+  background-color: #FAFAFA;
+  border-top: 2rpx dotted #EBEDF0
+}
+
+.nav .usingBox .using .footer text {
+  margin-left: 20rpx;
+  line-height: 59rpx;
+  color: #969799;
+  font-size: 25rpx
+}
+
+.nav .usingBox_2 {
+  width: 100%;
+  height: 262rpx;
+  margin-top: 30rpx
+}
+
+.nav .usingBox_2 .using {
+  width: 90%;
+  height: 260rpx;
+  margin: 0 auto;
+  box-shadow: 0rpx 0rpx 10rpx 0rpx rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.nav .usingBox_2 .using .top {
+  display: flex;
+  height: 240rpx;
+  align-content: center;
+  position: relative
+}
+
+.nav .usingBox_2 .using .top .left {
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.nav .usingBox_2 .using .top .left .coupon_price {
+  font-size: 40rpx;
+  color: #969799
+}
+
+.nav .usingBox_2 .using .top .left .coupon_price .unit {
+  font-size: 32rpx
+}
+
+.nav .usingBox_2 .using .top .left .coupon_limit {
+  width: 125rpx;
+  font-size: 20rpx;
+  line-height: 35rpx;
+  color: #969799
+}
+
+.nav .usingBox_2 .using .top .right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around
+}
+
+.nav .usingBox_2 .using .top .right .coupon_name {
+  font-weight: 600;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+  color: #969799
+}
+
+.nav .usingBox_2 .using .top .right .coupon_time {
+  font-size: 24rpx;
+  padding-bottom: 20rpx;
+  box-sizing: border-box;
+  color: #969799
+}
+
+.nav .usingBox_2 .using .top .radio {
+  position: absolute;
+  top: 96rpx;
+  right: 41rpx
+}
+
+.nav .usingBox_2 .using .footer {
+  background-color: #FAFAFA;
+  border-top: 2rpx dotted #EBEDF0
+}
+
+.nav .usingBox_2 .using .footer text {
+  margin-left: 20rpx;
+  line-height: 59rpx;
+  color: #969799;
+  font-size: 25rpx
+}
+
+.bottom {
+  height: 120rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  border-top: 2rpx solid #EBEDF0;
+  background: #fff;
+}
+
+.bottom .notUsing {
+  text-align: center;
+  font-size: 35rpx;
+  line-height: 128rpx
+}
+
+.van-button--large {
+  width: 150rpx;
+}
+.kongbai{
+  height: 130rpx;
+  background: #fff;
+
+  }

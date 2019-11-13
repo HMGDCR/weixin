@@ -4,7 +4,7 @@
     <view class="head">
       <image src="{{headImg?headImg:'https://mall.s.maizuo.com/e915e2c990c30f8efa9e30bc75da41ee.jpg'}}" alt=""></image>
     
-      <button open-type="getUserInfo" bindgetuserinfo='login' class="login">{{isLogin?nickName:"立即登录"}}</button>
+      <button open-type="getUserInfo" bindgetuserinfo='login' class="login">{{nickName?nickName:"立即登录"}}</button>
     </view>
   </view>
   <ul class="wealthBox">
@@ -22,7 +22,7 @@
     </li>
   </ul>
   <view style="margin:10px 0;" class="orderInfo">
-    <van-cell-group class="user-group">
+    <van-cell-group class="user-group" bindtap="goOrderList">
       <van-cell title="我的订单" is-link class="myOrder" />
     </van-cell-group>
     <view class="user-links">

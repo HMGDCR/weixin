@@ -13,8 +13,8 @@
     justify-content: flex-end;
     line-height: 80rpx;
     height: 80rpx;
-    border-bottom: 2rpx solid #ece9e9;
-    border-top: 2rpx solid #ece9e9;
+    /* border-bottom: 2rpx solid #ece9e9; */
+    /* border-top: 2rpx solid #ece9e9; */
     
     z-index: 3
 }
@@ -115,4 +115,7 @@ justify-content: center;
     justify-content: space-between;
     margin-right: 10rpx;
     padding: 0 20rpx
+}
+.goodsBox{
+  border-bottom: 2rpx solid #ece9e9;
 }
